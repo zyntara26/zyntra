@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High-ROAS Meta Ads Management (Facebook & Instagram) — Zyntara</title>
+  <meta name="description" content="Performance-driven Facebook and Instagram ad management with creative testing engines, dynamic audience modeling, and proven full-funnel conversion systems.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="High-ROAS Meta Ads Management (Facebook & Instagram) — Zyntara">
+  <meta property="og:description" content="Performance-driven Facebook and Instagram ad management with creative testing engines, dynamic audience modeling, and proven full-funnel conversion systems.">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="High-ROAS Meta Ads Management (Facebook & Instagram) — Zyntara">
+  <meta name="twitter:description" content="Performance-driven Facebook and Instagram ad management with creative testing engines, dynamic audience modeling, and proven full-funnel conversion systems.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236d28d9'/><stop offset='50%' stop-color='%235de6ff'/><stop offset='100%' stop-color='%23d3bbff'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%230f131e'/><path d='M25 30 L75 30 L38 70 L75 70' stroke='url(%23g)' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='70' cy='30' r='5' fill='%235de6ff'/><circle cx='30' cy='70' r='5' fill='%236d28d9'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    /* Custom sleek scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f131e;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #262a36;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #353946;
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface": "#0f131e",
+        "surface-dim": "#0f131e",
+        "surface-bright": "#353946",
+        "surface-container-lowest": "#0a0e19",
+        "surface-container-low": "#171b27",
+        "surface-container": "#1b1f2b",
+        "surface-container-high": "#262a36",
+        "surface-container-highest": "#303441",
+        "surface-variant": "#303441",
+        "surface-tint": "#d3bbff",
+        "on-surface": "#dfe2f2",
+        "on-surface-variant": "#ccc3d7",
+        "inverse-surface": "#dfe2f2",
+        "inverse-on-surface": "#2c303c",
+        "outline": "#958da1",
+        "outline-variant": "#4a4455",
+        "primary": "#d3bbff",
+        "on-primary": "#3f008d",
+        "primary-container": "#6d28d9",
+        "on-primary-container": "#dac5ff",
+        "inverse-primary": "#7331df",
+        "primary-fixed": "#ebddff",
+        "primary-fixed-dim": "#d3bbff",
+        "on-primary-fixed": "#250059",
+        "on-primary-fixed-variant": "#5b00c5",
+        "secondary": "#5de6ff",
+        "on-secondary": "#00363e",
+        "secondary-container": "#00cbe6",
+        "on-secondary-container": "#00515d",
+        "secondary-fixed": "#a2eeff",
+        "secondary-fixed-dim": "#2fd9f4",
+        "on-secondary-fixed": "#001f25",
+        "on-secondary-fixed-variant": "#004e5a",
+        "tertiary": "#ffb95f",
+        "on-tertiary": "#472a00",
+        "tertiary-container": "#7d4e00",
+        "on-tertiary-container": "#ffc47d",
+        "tertiary-fixed": "#ffddb8",
+        "tertiary-fixed-dim": "#ffb95f",
+        "on-tertiary-fixed": "#2a1700",
+        "on-tertiary-fixed-variant": "#653e00",
+        "error": "#ffb4ab",
+        "on-error": "#690005",
+        "error-container": "#93000a",
+        "on-error-container": "#ffdad6",
+        "background": "#0f131e",
+        "on-background": "#dfe2f2"
+      },
+      borderRadius: {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "display-hero": ["Space Grotesk", "sans-serif"],
+        "display-hero-mobile": ["Space Grotesk", "sans-serif"],
+        "headline-xl": ["Space Grotesk", "sans-serif"],
+        "headline-xl-mobile": ["Space Grotesk", "sans-serif"],
+        "headline-lg": ["Space Grotesk", "sans-serif"],
+        "headline-md": ["Space Grotesk", "sans-serif"],
+        "headline-sm": ["Space Grotesk", "sans-serif"],
+        "label-mono": ["Space Grotesk", "monospace"],
+        "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+        "body-sm": ["Plus Jakarta Sans", "sans-serif"]
+      }
+    }
+  }
+};
+</script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-[0_1px_8px_rgba(0,0,0,0.4)]">
+  <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+      <img alt="Zyntara Logo" class="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ALJJyrCq9AlNczhf-jQxlMKyyd0OYbMoZBh_Df4x_UkceZ5NzeRu4Mc9Sni9_-9mOA-lT76uaFOXSkvKlVCnmq4sITcWZ22fOdyEMSj_liQSbLVQPHrsNzjN5csM08rgThw1jljuaFQpZp9HHlFjB4DREMTGKAM239ZJUMJr1yhXI6Vp4393YzT6yNg2JHm6lTyh2pAaMhVrLmn809jmxhs-uSCZLGI93kBnG2z-S_kAu3m1GQ">
+      <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold group-hover:text-secondary transition-colors hidden sm:inline-block">Zyntara</span>
+    </a>
+
+    <!-- Desktop Nav Items -->
+    <nav class="hidden xl:flex items-center gap-1 bg-surface-container-low/70 px-3 py-1.5 rounded-full border border-outline-variant/30">
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="index.html">Home</a>
+      
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <a href="services.html" class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg inline-flex items-center gap-1 focus:outline-none cursor-pointer">
+          <span>Services</span>
+          <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+        </a>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[560px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="bg-surface-container-lowest/95 backdrop-blur-2xl border border-outline-variant/40 rounded-2xl p-4 shadow-[0_12px_40px_rgba(0,0,0,0.7)] grid grid-cols-2 gap-2">
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="ai-solutions.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">smart_toy</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Complete AI Solutions</span><span class="font-label-mono text-[10px] text-on-surface-variant">24/7 AI Chatbots & Voice Agents</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="web-development.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">devices</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Website Development</span><span class="font-label-mono text-[10px] text-on-surface-variant">High-conversion portals</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="app-development.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">code</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Application Development</span><span class="font-label-mono text-[10px] text-on-surface-variant">Custom web & mobile apps</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="digital-marketing.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">campaign</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Digital Marketing</span><span class="font-label-mono text-[10px] text-on-surface-variant">Multi-channel growth funnels</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="seo-services.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">trending_up</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">SEO Visibility</span><span class="font-label-mono text-[10px] text-on-surface-variant">Organic search dominance</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="geo-services.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">neurology</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">GEO Services</span><span class="font-label-mono text-[10px] text-on-surface-variant">Generative Engine Optimization</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="aeo-services.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">record_voice_over</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">AEO Services</span><span class="font-label-mono text-[10px] text-on-surface-variant">Answer Engine & voice search</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="meta-ads.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">ad_units</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Meta Ads</span><span class="font-label-mono text-[10px] text-on-surface-variant">High-ROAS Facebook & IG</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="google-ads.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">ads_click</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Google Ads</span><span class="font-label-mono text-[10px] text-on-surface-variant">High-intent Search & PMax</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item border border-secondary/20 bg-secondary/5" href="services.html">
+              <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary"><span class="material-symbols-outlined text-[18px]">hub</span></div>
+              <div><span class="block font-label-md text-label-md text-secondary font-bold">Services Overview Hub</span><span class="font-label-mono text-[10px] text-on-surface-variant">All 9 pillars & matrix</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="ai-solutions.html">AI Solutions</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="about.html">About Us</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="blog.html">Blog</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="flex items-center gap-3">
+      <a class="hidden md:inline-flex items-center justify-center font-label-lg text-label-lg px-4 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant/30 transition-all hover:border-secondary/40" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[17px] mr-1.5 text-secondary">chat</span>
+        WhatsApp Us
+      </a>
+      <a class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg px-5 py-2.5 rounded-full bg-gradient-to-r from-primary-container via-purple-600 to-secondary text-surface-container-lowest font-bold shadow-[0_0_24px_-4px_rgba(93,230,255,0.4)] hover:shadow-[0_0_30px_rgba(93,230,255,0.65)] hover:opacity-95 transition-all" href="contact.html#book-call">
+        <span class="material-symbols-outlined text-[17px] mr-1.5">calendar_today</span>
+        Book Free Strategy Call
+      </a>
+      <button aria-label="Toggle Navigation Menu" class="xl:hidden p-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high border border-outline-variant/40 flex items-center justify-center cursor-pointer transition-colors" id="mobile-menu-toggle">
+        <span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="hidden xl:hidden bg-surface-container-lowest/98 backdrop-blur-2xl border-b border-outline-variant/30 px-6 py-6 space-y-4 max-h-[85vh] overflow-y-auto" id="mobile-nav-drawer">
+    <nav class="flex flex-col space-y-1">
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="index.html">Home</a>
+      
+      <div class="px-4 py-2 rounded-lg bg-surface-container-low/50">
+        <div class="flex items-center justify-between cursor-pointer py-1" id="mobile-services-toggle">
+          <span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Services</span>
+          <span class="material-symbols-outlined text-[18px] text-secondary transition-transform duration-200" id="mobile-services-arrow">expand_more</span>
+        </div>
+        <div class="hidden pt-2 pl-3 border-l border-outline-variant/40 space-y-2 mt-1" id="mobile-services-list">
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="services.html">✦ All Services Overview Hub</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="ai-solutions.html">Complete AI Solutions</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="web-development.html">Website Development</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="app-development.html">Application Development</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="digital-marketing.html">Digital Marketing</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="seo-services.html">SEO (Search Engine Optimization)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="geo-services.html">GEO (Generative Engine Optimization)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="aeo-services.html">AEO (Answer Engine Optimization)</a>
+          <a class="block font-body-sm text-body-sm text-secondary font-semibold" href="meta-ads.html">Meta Ads (Facebook & Instagram)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="google-ads.html">Google Ads (Search & PMax)</a>
+        </div>
+      </div>
+
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="ai-solutions.html">AI Solutions</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="about.html">About Us</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="blog.html">Blog & Insights</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="contact.html">Contact Us</a>
+    </nav>
+    <div class="pt-4 flex flex-col gap-2.5 sm:hidden border-t border-outline-variant/30">
+      <a class="w-full text-center font-label-lg text-label-lg px-4 py-3 rounded-full bg-surface-container text-on-surface border border-outline-variant/40 flex items-center justify-center gap-2" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+        WhatsApp Us
+      </a>
+      <a class="w-full text-center font-label-lg text-label-lg px-4 py-3 rounded-full bg-gradient-to-r from-primary-container via-purple-600 to-secondary text-surface-container-lowest font-bold shadow-[0_0_24px_-4px_rgba(93,230,255,0.4)] flex items-center justify-center gap-2" href="contact.html#book-call">
+        <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+        Book Free Strategy Call
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="w-full pt-20 bg-background flex-1 pb-24 md:pb-0">
+    <div class="flex flex-col w-full text-on-surface antialiased overflow-hidden">
+      <div class="flex flex-col w-full selection:bg-secondary/20 selection:text-secondary">
+<!-- ==================== HERO SECTION ==================== -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest pt-8 md:pt-16 pb-20 md:pb-28">
+<!-- Atmospheric Ambient Back-luminescence -->
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[380px] bg-primary-container/20 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-48 right-[-100px] w-[450px] h-[350px] bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 flex flex-col items-center text-center">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-low/90 shadow-md backdrop-blur-md mb-8">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-mono text-label-mono uppercase text-secondary tracking-widest">
+          META ADS MANAGEMENT • Precision Paid Social &amp; ROAS Architecture
+        </span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-display-hero md:text-[68px] md:leading-[1.1] text-on-surface max-w-5xl tracking-tight mb-6">
+        Reach the Right People on <br class="hidden sm:inline"/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary-fixed">Facebook &amp; Instagram</span>
+</h1>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-10 leading-relaxed">
+        Zyntara creates and manages high-performance Meta Ads campaigns designed to generate qualified leads, drive high-margin sales, and aggressively scale return on ad spend (ROAS).
+      </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-16">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-primary-container via-inverse-primary to-secondary text-on-surface font-label-lg text-label-lg shadow-xl hover:opacity-95 transition-all duration-300 hover:scale-[1.02]" href="contact.html#audit-section">
+<span>Get Free Ads Audit</span>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-surface-container-high/80 text-on-surface font-label-lg text-label-lg shadow-md hover:bg-surface-container-highest transition-all duration-300" href="contact.html#audit-section">
+<span>Book Strategy Call</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">arrow_forward</span>
+</a>
+</div>
+<!-- Performance Metrics Bar -->
+<div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mb-14">
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col items-center justify-center">
+<div class="font-headline-lg text-headline-lg text-secondary mb-1">3.8x+</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant uppercase">Average Client ROAS</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col items-center justify-center">
+<div class="font-headline-lg text-headline-lg text-on-surface mb-1">$4.2M+</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant uppercase">Profitable Spend Managed</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col items-center justify-center">
+<div class="font-headline-lg text-headline-lg text-primary mb-1">&lt;$12</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant uppercase">Qualified B2B/CPL Avg</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low shadow-sm flex flex-col items-center justify-center">
+<div class="font-headline-lg text-headline-lg text-secondary-fixed-dim mb-1">AI Engine</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant uppercase">Algorithmic Creative Testing</div>
+</div>
+</div>
+<!-- Mockup: Meta Ads Manager Cockpit -->
+<div class="w-full max-w-6xl rounded-3xl bg-surface-container-low shadow-2xl p-4 sm:p-6 lg:p-8 text-left relative overflow-hidden">
+<!-- Interior Glow -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Cockpit Header -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-6 bg-surface-container/40 p-4 rounded-2xl">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary-container/30 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">dataset</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Zyntara Performance Matrix</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-mono text-[10px] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span> Real-time API Sync
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Meta Ads Manager • Advantage+ Production Cluster</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-mono text-label-mono bg-surface-container-high px-4 py-2 rounded-xl">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+<span>Date Range: Last 30 Days (Continuous CBO)</span>
+</div>
+</div>
+<!-- KPI Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+<div class="p-4 rounded-xl bg-surface-container">
+<span class="font-label-mono text-label-mono text-on-surface-variant block mb-1">TOTAL PROFITABLE SPEND</span>
+<div class="font-headline-md text-headline-md text-on-surface">$48,250.00</div>
+<span class="text-[12px] font-label-mono text-secondary mt-1 inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> 100% Paced Budget
+            </span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container">
+<span class="font-label-mono text-label-mono text-on-surface-variant block mb-1">BLENDED META ROAS</span>
+<div class="font-headline-md text-headline-md text-secondary">4.24x</div>
+<span class="text-[12px] font-label-mono text-secondary mt-1 inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +38% vs prev period
+            </span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container">
+<span class="font-label-mono text-label-mono text-on-surface-variant block mb-1">CONVERSIONS (LEADS &amp; SALES)</span>
+<div class="font-headline-md text-headline-md text-on-surface">1,842</div>
+<span class="text-[12px] font-label-mono text-primary mt-1 inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> High-intent verified
+            </span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container">
+<span class="font-label-mono text-label-mono text-on-surface-variant block mb-1">AVERAGE CPA / BLENDED CPL</span>
+<div class="font-headline-md text-headline-md text-on-surface">$26.19</div>
+<span class="text-[12px] font-label-mono text-secondary mt-1 inline-flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> -24% reduction
+            </span>
+</div>
+</div>
+<!-- Live Flights Table & Split Test Deck -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Flight Table (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col justify-between rounded-2xl bg-surface-container p-5">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">rocket_launch</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Active Scaling Campaigns</span>
+</div>
+<span class="font-label-mono text-[11px] text-on-surface-variant">3 Active Flights</span>
+</div>
+<div class="space-y-3">
+<!-- Campaign 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-high flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 hover:bg-surface-container-highest transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_8px_#5de6ff]"></span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Scale - Dynamic Advantage+ Catalog (CBO)</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant">Top-of-Funnel Broad • Dynamic SKUs</div>
+</div>
+</div>
+<div class="flex items-center gap-6 self-end sm:self-center">
+<div class="text-right">
+<span class="block font-label-mono text-[11px] text-on-surface-variant">ROAS</span>
+<span class="font-headline-sm text-headline-sm text-secondary">4.82x</span>
+</div>
+<div class="text-right">
+<span class="block font-label-mono text-[11px] text-on-surface-variant">PURCHASES</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">914</span>
+</div>
+</div>
+</div>
+<!-- Campaign 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-high flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 hover:bg-surface-container-highest transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_8px_#5de6ff]"></span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Lead Gen - Instant Forms &amp; WhatsApp Webhook</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant">Automated CRM Routing • Instant Validation</div>
+</div>
+</div>
+<div class="flex items-center gap-6 self-end sm:self-center">
+<div class="text-right">
+<span class="block font-label-mono text-[11px] text-on-surface-variant">AVG CPL</span>
+<span class="font-headline-sm text-headline-sm text-primary">$9.40</span>
+</div>
+<div class="text-right">
+<span class="block font-label-mono text-[11px] text-on-surface-variant">LEADS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">628</span>
+</div>
+</div>
+</div>
+<!-- Campaign 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-high flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 hover:bg-surface-container-highest transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_8px_#5de6ff]"></span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">High-Ticket Retargeting &amp; Video Testimonials</div>
+<div class="font-label-mono text-label-mono text-on-surface-variant">Mid-to-Bottom Funnel • Social Proof Blitz</div>
+</div>
+</div>
+<div class="flex items-center gap-6 self-end sm:self-center">
+<div class="text-right">
+<span class="block font-label-mono text-[11px] text-on-surface-variant">ROAS</span>
+<span class="font-headline-sm text-headline-sm text-secondary">5.10x</span>
+</div>
+<div class="text-right">
+<span class="block font-label-mono text-[11px] text-on-surface-variant">CLOSED REV</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">$74.2k</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Split Test Visual Miniature (4 Cols) -->
+<div class="lg:col-span-4 rounded-2xl bg-surface-container p-5 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline-sm text-headline-sm text-on-surface">A/B Creative Lab</span>
+<span class="font-label-mono text-[10px] uppercase text-secondary bg-secondary/10 px-2 py-0.5 rounded-md">99% Confident</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Real-time algorithmic creative split test comparing direct-response UGC vs 3D product motion render.
+              </p>
+<!-- Variants Comparison -->
+<div class="space-y-3 mb-4">
+<div class="p-3 rounded-xl bg-primary-container/20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-lg bg-secondary text-surface-container-lowest font-headline-sm text-[12px] flex items-center justify-center font-bold">A</span>
+<div>
+<div class="font-label-mono text-[12px] text-on-surface font-semibold">UGC Founder Hook #04</div>
+<div class="font-label-mono text-[10px] text-secondary">WINNING VARIANT</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-secondary">+41%</span>
+<span class="block font-label-mono text-[10px] text-on-surface-variant">CTR Lift</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-high opacity-70 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-lg bg-surface-variant text-on-surface font-headline-sm text-[12px] flex items-center justify-center font-bold">B</span>
+<div>
+<div class="font-label-mono text-[12px] text-on-surface">Brand Motion Reel 02</div>
+<div class="font-label-mono text-[10px] text-on-surface-variant">Audience Fatigue</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface">1.82%</span>
+<span class="block font-label-mono text-[10px] text-on-surface-variant">CTR Baseline</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mini Sparkline Graph Indicator -->
+<div class="pt-3 bg-surface-container-low p-3 rounded-xl">
+<div class="flex justify-between items-center text-[11px] font-label-mono text-on-surface-variant mb-1">
+<span>Budget Auto-Reallocated</span>
+<span class="text-secondary font-bold">85% to Variant A</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-secondary h-2 rounded-full w-[85%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== CAMPAIGN ARCHETYPES ==================== -->
+<section class="py-24 bg-surface relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="max-w-3xl mb-16">
+<span class="font-label-mono text-label-mono uppercase text-secondary tracking-widest block mb-2">Engineered Architectures</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-4">
+          Core Meta Campaign Archetypes
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          We don't rely on generic "boosted posts." Every dollar is channeled through battle-tested full-funnel architectures calibrated for your revenue model.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Archetype 1 -->
+<div class="group rounded-3xl bg-surface-container p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:bg-surface-container-high">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-primary-container/30 flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">contacts</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Lead Generation Campaigns</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Instant Forms combined with multi-step qualification filters, friction-reducing auto-fills, and immediate CRM webhooks to connect sales reps within 60 seconds.
+            </p>
+</div>
+<div class="pt-4 bg-surface-container-lowest/40 rounded-xl p-3">
+<span class="font-label-mono text-[11px] text-secondary font-semibold uppercase tracking-wider block mb-1">Key Outcome</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Pre-qualified pipeline at sub-$15 CPL</span>
+</div>
+</div>
+<!-- Archetype 2 -->
+<div class="group rounded-3xl bg-surface-container p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:bg-surface-container-high">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-secondary/15 flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">shopping_bag</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">E-Commerce &amp; Website Sales</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Advantage+ Shopping Campaigns (ASC), automated dynamic product feed integration, and SKU-level profitability tracking to scale GMV without margin collapse.
+            </p>
+</div>
+<div class="pt-4 bg-surface-container-lowest/40 rounded-xl p-3">
+<span class="font-label-mono text-[11px] text-secondary font-semibold uppercase tracking-wider block mb-1">Key Outcome</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">3.5x - 6.0x Blended Account ROAS</span>
+</div>
+</div>
+<!-- Archetype 3 -->
+<div class="group rounded-3xl bg-surface-container p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:bg-surface-container-high">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-primary-container/30 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">forum</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">WhatsApp Direct Inquiries</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              High-converting Click-to-WhatsApp ad triggers paired with conversational logic to launch instant chats with motivated buyers in global and mobile-first markets.
+            </p>
+</div>
+<div class="pt-4 bg-surface-container-lowest/40 rounded-xl p-3">
+<span class="font-label-mono text-[11px] text-primary font-semibold uppercase tracking-wider block mb-1">Key Outcome</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">80%+ Open &amp; Direct Engagement</span>
+</div>
+</div>
+<!-- Archetype 4 -->
+<div class="group rounded-3xl bg-surface-container p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:bg-surface-container-high">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-secondary/15 flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">all_inclusive</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Omnichannel Retargeting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Laser-targeted custom audience layering based on video completion rates, abandoned checkouts, and high-frequency pixel engagement across Instagram and Facebook.
+            </p>
+</div>
+<div class="pt-4 bg-surface-container-lowest/40 rounded-xl p-3">
+<span class="font-label-mono text-[11px] text-secondary font-semibold uppercase tracking-wider block mb-1">Key Outcome</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Zero wasted budget on stale leads</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== CORE SERVICES (3x2 GRID) ==================== -->
+<section class="py-24 bg-surface-container-lowest relative">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-mono text-label-mono uppercase text-secondary tracking-widest block mb-2">Capabilities Deck</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            Core Meta Ads Management Services
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          End-to-end tactical execution. We engineer the creative, configure the algorithmic signals, and manage scale across the Meta network.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Facebook Ads Engine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Broad targeting coupled with deep Meta AI signals. We architect scalable Campaign Budget Optimization (CBO) setups that let the algorithm uncover your highest-intent buyers at lowest marginal cost.
+          </p>
+<ul class="space-y-2 font-label-mono text-[12px] text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Advantage+ Audience Engineering
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Dynamic Consolidated Ad Sets
+            </li>
+</ul>
+</div>
+<!-- Service Card 2 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[24px]">smart_display</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Instagram Ads &amp; Reels</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            High-velocity 9:16 vertical video formats engineered for native engagement. We design UGC-style hooks, kinetic captions, and micro-influencer creative frameworks that blend natively into Explore &amp; Reels feeds.
+          </p>
+<ul class="space-y-2 font-label-mono text-[12px] text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+              Native 9:16 Vertical Video Formats
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+              High-CTR Hook Variation Framework
+            </li>
+</ul>
+</div>
+<!-- Service Card 3 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined text-[24px]">filter_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Lead Siphon Funnels</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Bespoke lead capture systems designed to eradicate junk inquiries. We implement interactive qualifying logic, conditional form branching, and direct CRM sync so your sales reps only speak to closed-won candidates.
+          </p>
+<ul class="space-y-2 font-label-mono text-[12px] text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Zero-Friction In-App Lead Generation
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Instant Automated Rep Alerting Webhooks
+            </li>
+</ul>
+</div>
+<!-- Service Card 4 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined text-[24px]">show_chart</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">E-Commerce Revenue Scaling</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Aggressive capital deployment strategies for modern online brands. We prevent creative fatigue and ad decay through systematic horizontal scaling, dynamic creative testing (DCT), and rigorous SKU contribution tracking.
+          </p>
+<ul class="space-y-2 font-label-mono text-[12px] text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Advantage+ Catalog Scaling Architecture
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Merchandising &amp; Bundle Optimization
+            </li>
+</ul>
+</div>
+<!-- Service Card 5 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[24px]">replay</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Dynamic Retargeting Matrix</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            Time-decayed remarketing sequences engineered to close drop-offs. We segment prospects by intent (3-day view, 7-day cart add, 30-day website visit) and serve tailored objections-handling creatives.
+          </p>
+<ul class="space-y-2 font-label-mono text-[12px] text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+              Objection-Annihilation Creative Sequences
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+              CAPI (Conversions API) First-Party Sync
+            </li>
+</ul>
+</div>
+<!-- Service Card 6 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined text-[24px]">analytics</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Creative Strategy &amp; Telemetry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+            In modern Meta advertising, creative is your true targeting. We provide fortnightly creative sprints, direct-response copy decks, script development, and granular cohort attribution reports.
+          </p>
+<ul class="space-y-2 font-label-mono text-[12px] text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Fortnightly Hook &amp; Angle Prototyping
+            </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Multi-Touch Blended ROAS Attribution
+            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 5-STEP META ADS PROCESS ==================== -->
+<section class="py-24 bg-surface relative">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<span class="font-label-mono text-label-mono uppercase text-secondary tracking-widest block mb-2">Predictable Execution Roadmap</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-4">
+          Our 5-Step Meta Ads Process
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          How Zyntara de-risks growth and transforms volatile ad spend into a mathematically sound, predictable acquisition engine.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+<!-- Step 01 -->
+<div class="rounded-3xl bg-surface-container p-6 shadow-sm flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/30 mb-6 font-bold">01</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Business Economics &amp; Avatar Audit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              We deconstruct your customer journey, calculate maximum allowable CAC, analyze unit margins, and map exact behavioral trigger points.
+            </p>
+</div>
+<div class="pt-6 font-label-mono text-[11px] text-secondary">
+            PHASE 01 • FOUNDATION
+          </div>
+</div>
+<!-- Step 02 -->
+<div class="rounded-3xl bg-surface-container p-6 shadow-sm flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/30 mb-6 font-bold">02</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Account &amp; Creative Deep Audit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Reviewing historical pixel logs, CAPI configuration, audience overlap, frequency decay, and pinpointing wasted ad spend leaks.
+            </p>
+</div>
+<div class="pt-6 font-label-mono text-[11px] text-secondary">
+            PHASE 02 • DIAGNOSTICS
+          </div>
+</div>
+<!-- Step 03 -->
+<div class="rounded-3xl bg-surface-container p-6 shadow-sm flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/30 mb-6 font-bold">03</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Targeting &amp; CBO Consolidation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Eliminating auction fragmentation. We configure simplified Advantage+ account models that unlock Meta's highest machine learning efficiency.
+            </p>
+</div>
+<div class="pt-6 font-label-mono text-[11px] text-secondary">
+            PHASE 03 • ARCHITECTURE
+          </div>
+</div>
+<!-- Step 04 -->
+<div class="rounded-3xl bg-surface-container p-6 shadow-sm flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/30 mb-6 font-bold">04</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Creative &amp; Post-Click Alignment</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Developing high-CTR hooks, visual assets, and ensuring 1:1 congruency between the ad promise and the destination landing page experience.
+            </p>
+</div>
+<div class="pt-6 font-label-mono text-[11px] text-secondary">
+            PHASE 04 • PRODUCTION
+          </div>
+</div>
+<!-- Step 05 -->
+<div class="rounded-3xl bg-surface-container p-6 shadow-sm flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/30 mb-6 font-bold">05</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Launch, Algorithmic Scaling &amp; Telemetry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Systematic daily spend shifting into winning ad flights, rapid creative pruning, and transparent executive attribution dashboard access.
+            </p>
+</div>
+<div class="pt-6 font-label-mono text-[11px] text-secondary">
+            PHASE 05 • SCALE
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== ENTERPRISE DELIVERABLES ==================== -->
+<section class="py-24 bg-surface-container-lowest relative">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="max-w-3xl mb-16">
+<span class="font-label-mono text-label-mono uppercase text-secondary tracking-widest block mb-2">Total Scope Clarity</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-4">
+          What You Get with Zyntara
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Complete institutional-grade infrastructure. No outsourced black boxes—everything is owned 100% inside your dedicated Meta Business Manager.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Deliverable 1 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md flex items-start gap-6">
+<div class="w-12 h-12 rounded-2xl bg-primary-container/40 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">map</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Comprehensive Campaign Strategy Blueprint</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              A bespoke full-funnel roadmap establishing 30, 60, and 90-day spend targets, target ROAS/CAC milestones, creative testing cadence, and algorithmic risk mitigation.
+            </p>
+<span class="font-label-mono text-[11px] text-secondary uppercase tracking-wider">Includes TAM analysis &amp; competitor reverse-engineering</span>
+</div>
+</div>
+<!-- Deliverable 2 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md flex items-start gap-6">
+<div class="w-12 h-12 rounded-2xl bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">edit_note</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Direct-Response Ad Creative Plan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              Bi-weekly batches of battle-tested static visual mockups, UGC video scripts with 3-second hook variations, objection-handling direct-response copy, and offer framing.
+            </p>
+<span class="font-label-mono text-[11px] text-secondary uppercase tracking-wider">Frictionless scripts + dynamic motion storyboards</span>
+</div>
+</div>
+<!-- Deliverable 3 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md flex items-start gap-6">
+<div class="w-12 h-12 rounded-2xl bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Audience &amp; Budget Allocation Matrix</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              Continuous deployment of lookalike seed lists, server-side Conversions API (CAPI) events, and predictive algorithmic budget pacing to guarantee zero spend decay.
+            </p>
+<span class="font-label-mono text-[11px] text-secondary uppercase tracking-wider">Eliminates audience overlap &amp; auction fatigue</span>
+</div>
+</div>
+<!-- Deliverable 4 -->
+<div class="p-8 rounded-3xl bg-surface-container shadow-md flex items-start gap-6">
+<div class="w-12 h-12 rounded-2xl bg-primary-container/40 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">monitoring</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Real-Time Executive Attribution Dashboard</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-4">
+              24/7 transparent live cockpit connecting Meta Ads data with real downstream CRM conversions, Stripe/Shopify revenue, blended MER, and actual cash-in-bank return.
+            </p>
+<span class="font-label-mono text-[11px] text-primary uppercase tracking-wider">Unfiltered transparency with zero vanity metrics</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== LEAD CAPTURE AUDIT SECTION ==================== -->
+<section class="py-24 bg-surface relative overflow-hidden" id="audit-section">
+<!-- Ambient Flare -->
+<div class="absolute bottom-0 left-1/3 w-[500px] h-[350px] bg-primary-container/15 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Copy & Value Proposition -->
+<div class="lg:col-span-5">
+<span class="font-label-mono text-label-mono uppercase text-secondary tracking-widest block mb-2">Confidential Diagnostic</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-6">
+            Request Your Free Meta Ads Audit
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+            Uncover wasted spend, audience fatigue, and ROAS bottlenecks inside your Meta Ad account within 48 hours.
+          </p>
+<div class="space-y-4 mb-10">
+<div class="flex items-start gap-3.5">
+<div class="w-6 h-6 rounded-full bg-secondary/15 flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">48-Hour Full Account &amp; Creative Tear-down</span>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-6 h-6 rounded-full bg-secondary/15 flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Wasted Spend &amp; Audience Overlap Diagnostic</span>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-6 h-6 rounded-full bg-secondary/15 flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">Custom 90-Day Scaling Blueprint &amp; ROAS Projection</span>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-6 h-6 rounded-full bg-secondary/15 flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface">100% Confidential with Zero High-Pressure Sales</span>
+</div>
+</div>
+<div class="pt-6 border-t border-white/5 flex items-center gap-4">
+<a class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>Direct WhatsApp Quick Chat</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Interactive Form -->
+<div class="lg:col-span-7">
+<div class="p-8 sm:p-10 rounded-3xl bg-surface-container-low shadow-2xl relative">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Claim Your Performance Audit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-8">Enter your business details below to initiate your 48-hour diagnostic.</p>
+<form class="space-y-5" onsubmit="event.preventDefault(); alert('Audit request received. A Zyntara Meta Ads Specialist will contact you within 24 business hours.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<!-- Full Name -->
+<div>
+<label class="block font-label-mono text-label-mono text-on-surface-variant mb-2 uppercase">Full Name *</label>
+<input class="w-full h-13 px-4 rounded-xl bg-surface-container text-on-surface placeholder:text-outline/60 focus:bg-surface-container-high focus:outline-none focus:ring-1 focus:ring-secondary text-sm transition-all" placeholder="Alex Mercer" required="" type="text"/>
+</div>
+<!-- Business Name -->
+<div>
+<label class="block font-label-mono text-label-mono text-on-surface-variant mb-2 uppercase">Business / Website *</label>
+<input class="w-full h-13 px-4 rounded-xl bg-surface-container text-on-surface placeholder:text-outline/60 focus:bg-surface-container-high focus:outline-none focus:ring-1 focus:ring-secondary text-sm transition-all" placeholder="example.com" required="" type="text"/>
+</div>
+</div>
+<!-- Phone / WhatsApp -->
+<div>
+<label class="block font-label-mono text-label-mono text-on-surface-variant mb-2 uppercase">Phone or WhatsApp Number *</label>
+<input class="w-full h-13 px-4 rounded-xl bg-surface-container text-on-surface placeholder:text-outline/60 focus:bg-surface-container-high focus:outline-none focus:ring-1 focus:ring-secondary text-sm transition-all" placeholder="+1 (555) 000-0000" required="" type="tel"/>
+</div>
+<!-- Monthly Budget Dropdown -->
+<div>
+<label class="block font-label-mono text-label-mono text-on-surface-variant mb-2 uppercase">Current Monthly Ad Budget *</label>
+<select class="w-full h-13 px-4 rounded-xl bg-surface-container text-on-surface focus:bg-surface-container-high focus:outline-none focus:ring-1 focus:ring-secondary text-sm transition-all">
+<option value="under3k">&lt; $3,000 / month</option>
+<option selected="" value="3k-10k">$3,000 – $10,000 / month</option>
+<option value="10k-30k">$10,000 – $30,000 / month</option>
+<option value="30k-plus">$30,000+ / month (Enterprise Scale)</option>
+</select>
+</div>
+<!-- Main Business Goal -->
+<div>
+<label class="block font-label-mono text-label-mono text-on-surface-variant mb-2 uppercase">Primary Growth Objective *</label>
+<select class="w-full h-13 px-4 rounded-xl bg-surface-container text-on-surface focus:bg-surface-container-high focus:outline-none focus:ring-1 focus:ring-secondary text-sm transition-all">
+<option value="leads">Generate More Qualified B2B/High-Ticket Leads</option>
+<option value="ecom">Scale E-Commerce GMV &amp; Stabilize ROAS</option>
+<option value="cpa">Lower Cost Per Acquisition (CPA) / Eliminate Wasted Spend</option>
+<option value="overhaul">Complete Account &amp; Creative Overhaul</option>
+</select>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full h-14 rounded-full bg-gradient-to-r from-primary-container via-inverse-primary to-secondary text-on-surface font-label-lg text-label-lg shadow-xl hover:opacity-95 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer" type="submit">
+<span>Get Free Ads Audit ⚡</span>
+</button>
+</div>
+<!-- Privacy Reassurance -->
+<div class="flex items-center justify-center gap-2 pt-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-mono text-[11px]">Enterprise NDA Compliant. Zero spam guaranteed.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== FREQUENTLY ASKED QUESTIONS ==================== -->
+<section class="py-24 bg-surface-container-lowest relative">
+<div class="max-w-4xl mx-auto px-6 lg:px-12">
+<div class="text-center mb-16">
+<span class="font-label-mono text-label-mono uppercase text-secondary tracking-widest block mb-2">Transparency First</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-4">
+          Frequently Asked Questions
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Straight answers regarding our Meta advertising methodology, creative production, and engagement model.
+        </p>
+</div>
+<div class="space-y-4" id="faq-container">
+<!-- FAQ 1 -->
+<div class="rounded-2xl bg-surface-container p-6 transition-all duration-200 cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium pr-4">Which platforms do you manage?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            We manage advertising across the entire Meta ecosystem: Facebook, Instagram, Messenger, and Meta Audience Network directly via Meta Ads Manager. We also implement server-side Conversions API (CAPI) and WhatsApp click-to-chat automations.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-2xl bg-surface-container p-6 transition-all duration-200 cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium pr-4">Can you help with ad creatives and copywriting?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Yes, creative strategy is at the core of our management. We produce direct-response copy decks, script high-converting UGC videos, test static graphic variations, and align the messaging with post-click landing pages.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-2xl bg-surface-container p-6 transition-all duration-200 cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium pr-4">What minimum monthly ad budget do you recommend?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            We typically work with businesses investing at least $2,000–$5,000+/month. This threshold ensures the Meta algorithmic learning model receives enough daily conversion events (typically 50 per ad set/week) to stabilize and scale efficiently.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="rounded-2xl bg-surface-container p-6 transition-all duration-200 cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium pr-4">How fast can we see results from Meta Ads?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            Initial directional data and leads start arriving within 48–72 hours of campaign activation. Algorithmic stabilization and creative testing clarity are typically reached within 7 to 14 days, followed by structured scaling phases.
+          </div>
+</div>
+<!-- FAQ 5 -->
+<div class="rounded-2xl bg-surface-container p-6 transition-all duration-200 cursor-pointer faq-item" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-medium pr-4">Do you require long-term contracts?</h3>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 faq-icon">expand_more</span>
+</div>
+<div class="faq-content hidden pt-4 text-on-surface-variant font-body-md text-body-md leading-relaxed">
+            No lock-in retainers. We operate on performance, transparency, and flexible 30-day growth sprints. Our retention is built entirely on producing measurable ROAS and bottom-line pipeline growth for your enterprise.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== FINAL CTA BANNER ==================== -->
+<section class="py-20 bg-surface relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="w-full rounded-[32px] bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low p-10 sm:p-16 lg:p-20 text-center relative overflow-hidden shadow-2xl">
+<!-- Radiant Ambient Center Backlight -->
+<div class="absolute inset-0 bg-radial from-primary-container/20 to-transparent pointer-events-none"></div>
+<div class="max-w-3xl mx-auto relative z-10 flex flex-col items-center">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary/10 text-secondary font-label-mono text-label-mono uppercase tracking-widest mb-6">
+            SCALE PROFITABLY WITH META ADS
+          </div>
+<h2 class="font-headline-xl text-headline-xl md:text-5xl text-on-surface tracking-tight mb-6">
+            Ready to Get Better Results from Meta Ads?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl leading-relaxed">
+            Partner with Zyntara to launch high-ROAS paid social funnels engineered for scale, predictability, and genuine bottom-line revenue.
+          </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-primary-container via-inverse-primary to-secondary text-on-surface font-label-lg text-label-lg shadow-xl hover:opacity-95 transition-all duration-300 hover:scale-[1.02]" href="contact.html#audit-section">
+<span>Get Free Ads Audit</span>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-surface-container-highest/80 text-on-surface font-label-lg text-label-lg shadow-md hover:bg-surface-container-highest transition-all duration-300" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function toggleFaq(element) {
+    const content = element.querySelector('.faq-content');
+    const icon = element.querySelector('.faq-icon');
+    const isHidden = content.classList.contains('hidden');
+
+    // Close all other accordions for neatness
+    document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+    document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+    if (isHidden) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+    }
+  }
+</script>
+    </div>
+  </main>
+
+  <div class="md:hidden fixed bottom-4 left-4 right-4 z-40 bg-surface-container-high/95 backdrop-blur-xl p-2 rounded-full border border-outline-variant/40 shadow-[0_4px_24px_rgba(0,0,0,0.6)] flex items-center gap-2">
+  <a class="flex-1 text-center font-label-md text-label-md py-2.5 px-3 rounded-full bg-surface-container text-on-surface flex items-center justify-center gap-1.5 border border-outline-variant/30 hover:bg-surface-container-highest transition-colors" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+    <span class="material-symbols-outlined text-[16px] text-secondary">chat</span>
+    <span>WhatsApp</span>
+  </a>
+  <a class="flex-1 text-center font-label-md text-label-md py-2.5 px-3 rounded-full bg-gradient-to-r from-primary-container via-purple-600 to-secondary text-surface-container-lowest font-bold flex items-center justify-center gap-1.5 shadow-[0_0_16px_rgba(93,230,255,0.35)] hover:opacity-95 transition-all" href="contact.html#book-call">
+    <span class="material-symbols-outlined text-[16px]">bolt</span>
+    <span>Strategy Call</span>
+  </a>
+</div>
+  <footer class="w-full bg-surface-container-lowest py-16 border-t border-outline-variant/20 shadow-[0_-1px_12px_rgba(0,0,0,0.4)]">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <!-- Col 1: Brand Info -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <img alt="Zyntara Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCq9AlNczhf-jQxlMKyyd0OYbMoZBh_Df4x_UkceZ5NzeRu4Mc9Sni9_-9mOA-lT76uaFOXSkvKlVCnmq4sITcWZ22fOdyEMSj_liQSbLVQPHrsNzjN5csM08rgThw1jljuaFQpZp9HHlFjB4DREMTGKAM239ZJUMJr1yhXI6Vp4393YzT6yNg2JHm6lTyh2pAaMhVrLmn809jmxhs-uSCZLGI93kBnG2z-S_kAu3m1GQ">
+          <span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Zyntara</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Enterprise AI automation, generative engine visibility (GEO/AEO), and autonomous digital growth infrastructure engineered for mission-critical business scale.
+        </p>
+        <div class="flex items-center gap-3 pt-2">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-xs text-secondary font-mono border border-secondary/20">
+            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Systems Active 24/7
+          </span>
+        </div>
+      </div>
+
+      <!-- Col 2: Solutions -->
+      <div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4 font-semibold">Growth Solutions</h4>
+        <ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-secondary transition-colors" href="ai-solutions.html">Autonomous AI Agents & Chatbots</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="web-development.html">High-Converting Web Development</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="app-development.html">Cloud Software & Mobile Apps</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="digital-marketing.html">Multi-Channel Digital Marketing</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="seo-services.html">Organic SEO Search Visibility</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="geo-services.html">Generative Engine Optimization (GEO)</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="aeo-services.html">Answer Engine Optimization (AEO)</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="meta-ads.html">Meta Ads (Facebook & Instagram)</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="google-ads.html">Google Ads (Search & PMax)</a></li>
+          <li><a class="hover:text-secondary transition-colors font-semibold text-secondary" href="services.html">✦ All Services Directory</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Agency & Company -->
+      <div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4 font-semibold">Agency</h4>
+        <ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-secondary transition-colors" href="about.html">About Zyntara</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="services.html">Growth Methodology</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="blog.html">Case Studies & Insights</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="contact.html">Contact Us</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="contact.html#audit-section">Free Growth Audit</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="privacy.html">Privacy Framework</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="terms.html">Terms of Scale</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Direct Access CTA -->
+      <div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4 font-semibold">Direct Access</h4>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+          Ready to deploy quantum-leap growth systems and automate your inbound pipelines?
+        </p>
+        <div class="space-y-3">
+          <a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary hover:text-on-surface transition-colors font-semibold bg-surface-container px-4 py-2.5 rounded-xl border border-secondary/20 hover:border-secondary/50 w-full justify-center" href="contact.html#book-call">
+            <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+            Schedule Protocol Call
+          </a>
+          <a class="inline-flex items-center gap-2 font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors text-xs w-full justify-center" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[16px]">chat</span>
+            Direct WhatsApp Hotline
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pt-8 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+      <p>© 2026 Zyntara AI Systems. Engineered for autonomous business growth.</p>
+      <div class="flex items-center gap-6">
+        <a class="hover:text-secondary transition-colors text-xs" href="privacy.html">Privacy Framework</a>
+        <a class="hover:text-secondary transition-colors text-xs" href="terms.html">Terms of Scale</a>
+        <a class="hover:text-secondary transition-colors text-xs" href="contact.html">Security Protocol</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+  function toggleFaq(element) {
+    const content = element.querySelector('.faq-content');
+    const icon = element.querySelector('.faq-icon');
+    const isHidden = content.classList.contains('hidden');
+
+    // Close all other accordions for neatness
+    document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+    document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+    if (isHidden) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-180');
+    }
+  }
+</script>
+  <!-- Core Interactive Scripts -->
+<script>
+// Mobile Navigation Drawer Toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const drawer = document.getElementById('mobile-nav-drawer');
+  const menuIcon = document.getElementById('mobile-menu-icon');
+  
+  if (toggleBtn && drawer) {
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = drawer.classList.toggle('hidden');
+      if (menuIcon) {
+        menuIcon.textContent = isHidden ? 'menu' : 'close';
+      }
+    });
+
+    // Close when clicking any link inside drawer
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        drawer.classList.add('hidden');
+        if (menuIcon) menuIcon.textContent = 'menu';
+      });
+    });
+  }
+
+  // Mobile Services Submenu Toggle
+  const servicesToggle = document.getElementById('mobile-services-toggle');
+  const servicesList = document.getElementById('mobile-services-list');
+  const servicesArrow = document.getElementById('mobile-services-arrow');
+  if (servicesToggle && servicesList) {
+    servicesToggle.addEventListener('click', () => {
+      servicesList.classList.toggle('hidden');
+      if (servicesArrow) {
+        servicesArrow.classList.toggle('rotate-180');
+      }
+    });
+  }
+
+  // FAQ Accordion Handlers
+  document.querySelectorAll('.faq-toggle, [data-faq-toggle]').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const item = button.closest('.faq-item') || button.parentElement;
+      const content = item.querySelector('.faq-content') || item.querySelector('[data-faq-content]') || item.nextElementSibling;
+      const icon = item.querySelector('.faq-icon') || item.querySelector('.material-symbols-outlined');
+      if (!content) return;
+      
+      const isCurrentlyHidden = content.classList.contains('hidden');
+
+      // Close all siblings
+      const parentContainer = item.closest('.faq-container') || item.parentElement;
+      if (parentContainer) {
+        parentContainer.querySelectorAll('.faq-content, [data-faq-content]').forEach(c => c.classList.add('hidden'));
+        parentContainer.querySelectorAll('.faq-icon').forEach(ic => ic.classList.remove('rotate-180'));
+      }
+
+      // Open selected
+      if (isCurrentlyHidden) {
+        content.classList.remove('hidden');
+        if (icon) icon.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Interactive Form Submissions (Audit and Contact Forms)
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+      const originalText = submitBtn ? submitBtn.innerHTML : 'Submit';
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+          <span class="inline-flex items-center gap-2">
+            <svg class="animate-spin h-4 w-4 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+            </svg>
+            Transmitting Protocol...
+          </span>
+        `;
+      }
+
+      setTimeout(() => {
+        // Success Notification Banner
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-24 right-6 z-50 bg-surface-container-high border border-secondary text-on-surface p-4 rounded-2xl shadow-[0_8px_32px_rgba(93,230,255,0.4)] flex items-center gap-3 transition-all duration-300 transform translate-y-0';
+        toast.innerHTML = `
+          <div class="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
+            <span class="material-symbols-outlined text-[20px]">check_circle</span>
+          </div>
+          <div>
+            <div class="font-headline-sm text-sm font-bold text-on-surface">Growth Inquiry Confirmed</div>
+            <div class="font-body-sm text-xs text-on-surface-variant">A Senior AI Strategist will analyze your metrics and contact you within 24 hours.</div>
+          </div>
+        `;
+        document.body.appendChild(toast);
+
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+        }
+        form.reset();
+
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateY(-10px)';
+          setTimeout(() => toast.remove(), 400);
+        }, 5000);
+      }, 900);
+    });
+  });
+});
+</script>
+</body>
+</html>

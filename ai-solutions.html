@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autonomous AI Agents & Intelligent Automation Solutions — Zyntara</title>
+  <meta name="description" content="Deploy 24/7 intelligent voice agents, conversational chatbots, autonomous lead qualification, and end-to-end automated business workflows with Zyntara.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Autonomous AI Agents & Intelligent Automation Solutions — Zyntara">
+  <meta property="og:description" content="Deploy 24/7 intelligent voice agents, conversational chatbots, autonomous lead qualification, and end-to-end automated business workflows with Zyntara.">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Autonomous AI Agents & Intelligent Automation Solutions — Zyntara">
+  <meta name="twitter:description" content="Deploy 24/7 intelligent voice agents, conversational chatbots, autonomous lead qualification, and end-to-end automated business workflows with Zyntara.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236d28d9'/><stop offset='50%' stop-color='%235de6ff'/><stop offset='100%' stop-color='%23d3bbff'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%230f131e'/><path d='M25 30 L75 30 L38 70 L75 70' stroke='url(%23g)' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='70' cy='30' r='5' fill='%235de6ff'/><circle cx='30' cy='70' r='5' fill='%236d28d9'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    /* Custom sleek scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f131e;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #262a36;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #353946;
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface": "#0f131e",
+        "surface-dim": "#0f131e",
+        "surface-bright": "#353946",
+        "surface-container-lowest": "#0a0e19",
+        "surface-container-low": "#171b27",
+        "surface-container": "#1b1f2b",
+        "surface-container-high": "#262a36",
+        "surface-container-highest": "#303441",
+        "surface-variant": "#303441",
+        "surface-tint": "#d3bbff",
+        "on-surface": "#dfe2f2",
+        "on-surface-variant": "#ccc3d7",
+        "inverse-surface": "#dfe2f2",
+        "inverse-on-surface": "#2c303c",
+        "outline": "#958da1",
+        "outline-variant": "#4a4455",
+        "primary": "#d3bbff",
+        "on-primary": "#3f008d",
+        "primary-container": "#6d28d9",
+        "on-primary-container": "#dac5ff",
+        "inverse-primary": "#7331df",
+        "primary-fixed": "#ebddff",
+        "primary-fixed-dim": "#d3bbff",
+        "on-primary-fixed": "#250059",
+        "on-primary-fixed-variant": "#5b00c5",
+        "secondary": "#5de6ff",
+        "on-secondary": "#00363e",
+        "secondary-container": "#00cbe6",
+        "on-secondary-container": "#00515d",
+        "secondary-fixed": "#a2eeff",
+        "secondary-fixed-dim": "#2fd9f4",
+        "on-secondary-fixed": "#001f25",
+        "on-secondary-fixed-variant": "#004e5a",
+        "tertiary": "#ffb95f",
+        "on-tertiary": "#472a00",
+        "tertiary-container": "#7d4e00",
+        "on-tertiary-container": "#ffc47d",
+        "tertiary-fixed": "#ffddb8",
+        "tertiary-fixed-dim": "#ffb95f",
+        "on-tertiary-fixed": "#2a1700",
+        "on-tertiary-fixed-variant": "#653e00",
+        "error": "#ffb4ab",
+        "on-error": "#690005",
+        "error-container": "#93000a",
+        "on-error-container": "#ffdad6",
+        "background": "#0f131e",
+        "on-background": "#dfe2f2"
+      },
+      borderRadius: {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "display-hero": ["Space Grotesk", "sans-serif"],
+        "display-hero-mobile": ["Space Grotesk", "sans-serif"],
+        "headline-xl": ["Space Grotesk", "sans-serif"],
+        "headline-xl-mobile": ["Space Grotesk", "sans-serif"],
+        "headline-lg": ["Space Grotesk", "sans-serif"],
+        "headline-md": ["Space Grotesk", "sans-serif"],
+        "headline-sm": ["Space Grotesk", "sans-serif"],
+        "label-mono": ["Space Grotesk", "monospace"],
+        "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+        "body-sm": ["Plus Jakarta Sans", "sans-serif"]
+      }
+    }
+  }
+};
+</script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-[0_1px_8px_rgba(0,0,0,0.4)]">
+  <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+      <img alt="Zyntara Logo" class="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ALJJyrCq9AlNczhf-jQxlMKyyd0OYbMoZBh_Df4x_UkceZ5NzeRu4Mc9Sni9_-9mOA-lT76uaFOXSkvKlVCnmq4sITcWZ22fOdyEMSj_liQSbLVQPHrsNzjN5csM08rgThw1jljuaFQpZp9HHlFjB4DREMTGKAM239ZJUMJr1yhXI6Vp4393YzT6yNg2JHm6lTyh2pAaMhVrLmn809jmxhs-uSCZLGI93kBnG2z-S_kAu3m1GQ">
+      <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold group-hover:text-secondary transition-colors hidden sm:inline-block">Zyntara</span>
+    </a>
+
+    <!-- Desktop Nav Items -->
+    <nav class="hidden xl:flex items-center gap-1 bg-surface-container-low/70 px-3 py-1.5 rounded-full border border-outline-variant/30">
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="index.html">Home</a>
+      
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <a href="services.html" class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg inline-flex items-center gap-1 focus:outline-none cursor-pointer">
+          <span>Services</span>
+          <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+        </a>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[560px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="bg-surface-container-lowest/95 backdrop-blur-2xl border border-outline-variant/40 rounded-2xl p-4 shadow-[0_12px_40px_rgba(0,0,0,0.7)] grid grid-cols-2 gap-2">
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="ai-solutions.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">smart_toy</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Complete AI Solutions</span><span class="font-label-mono text-[10px] text-on-surface-variant">24/7 AI Chatbots & Voice Agents</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="web-development.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">devices</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Website Development</span><span class="font-label-mono text-[10px] text-on-surface-variant">High-conversion portals</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="app-development.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">code</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Application Development</span><span class="font-label-mono text-[10px] text-on-surface-variant">Custom web & mobile apps</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="digital-marketing.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">campaign</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Digital Marketing</span><span class="font-label-mono text-[10px] text-on-surface-variant">Multi-channel growth funnels</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="seo-services.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">trending_up</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">SEO Visibility</span><span class="font-label-mono text-[10px] text-on-surface-variant">Organic search dominance</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="geo-services.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">neurology</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">GEO Services</span><span class="font-label-mono text-[10px] text-on-surface-variant">Generative Engine Optimization</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="aeo-services.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">record_voice_over</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">AEO Services</span><span class="font-label-mono text-[10px] text-on-surface-variant">Answer Engine & voice search</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="meta-ads.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">ad_units</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Meta Ads</span><span class="font-label-mono text-[10px] text-on-surface-variant">High-ROAS Facebook & IG</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="google-ads.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">ads_click</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Google Ads</span><span class="font-label-mono text-[10px] text-on-surface-variant">High-intent Search & PMax</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item border border-secondary/20 bg-secondary/5" href="services.html">
+              <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary"><span class="material-symbols-outlined text-[18px]">hub</span></div>
+              <div><span class="block font-label-md text-label-md text-secondary font-bold">Services Overview Hub</span><span class="font-label-mono text-[10px] text-on-surface-variant">All 9 pillars & matrix</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="text-secondary bg-surface-container font-bold px-3 py-1.5 rounded-full font-label-lg text-label-lg" href="ai-solutions.html">AI Solutions</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="about.html">About Us</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="blog.html">Blog</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="flex items-center gap-3">
+      <a class="hidden md:inline-flex items-center justify-center font-label-lg text-label-lg px-4 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant/30 transition-all hover:border-secondary/40" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[17px] mr-1.5 text-secondary">chat</span>
+        WhatsApp Us
+      </a>
+      <a class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg px-5 py-2.5 rounded-full bg-gradient-to-r from-primary-container via-purple-600 to-secondary text-surface-container-lowest font-bold shadow-[0_0_24px_-4px_rgba(93,230,255,0.4)] hover:shadow-[0_0_30px_rgba(93,230,255,0.65)] hover:opacity-95 transition-all" href="contact.html#book-call">
+        <span class="material-symbols-outlined text-[17px] mr-1.5">calendar_today</span>
+        Book Free Strategy Call
+      </a>
+      <button aria-label="Toggle Navigation Menu" class="xl:hidden p-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high border border-outline-variant/40 flex items-center justify-center cursor-pointer transition-colors" id="mobile-menu-toggle">
+        <span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="hidden xl:hidden bg-surface-container-lowest/98 backdrop-blur-2xl border-b border-outline-variant/30 px-6 py-6 space-y-4 max-h-[85vh] overflow-y-auto" id="mobile-nav-drawer">
+    <nav class="flex flex-col space-y-1">
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="index.html">Home</a>
+      
+      <div class="px-4 py-2 rounded-lg bg-surface-container-low/50">
+        <div class="flex items-center justify-between cursor-pointer py-1" id="mobile-services-toggle">
+          <span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Services</span>
+          <span class="material-symbols-outlined text-[18px] text-secondary transition-transform duration-200" id="mobile-services-arrow">expand_more</span>
+        </div>
+        <div class="hidden pt-2 pl-3 border-l border-outline-variant/40 space-y-2 mt-1" id="mobile-services-list">
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="services.html">✦ All Services Overview Hub</a>
+          <a class="block font-body-sm text-body-sm text-secondary font-semibold" href="ai-solutions.html">Complete AI Solutions</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="web-development.html">Website Development</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="app-development.html">Application Development</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="digital-marketing.html">Digital Marketing</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="seo-services.html">SEO (Search Engine Optimization)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="geo-services.html">GEO (Generative Engine Optimization)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="aeo-services.html">AEO (Answer Engine Optimization)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="meta-ads.html">Meta Ads (Facebook & Instagram)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="google-ads.html">Google Ads (Search & PMax)</a>
+        </div>
+      </div>
+
+      <a class="text-secondary bg-surface-container font-bold px-4 py-3 rounded-lg" href="ai-solutions.html">AI Solutions</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="about.html">About Us</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="blog.html">Blog & Insights</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="contact.html">Contact Us</a>
+    </nav>
+    <div class="pt-4 flex flex-col gap-2.5 sm:hidden border-t border-outline-variant/30">
+      <a class="w-full text-center font-label-lg text-label-lg px-4 py-3 rounded-full bg-surface-container text-on-surface border border-outline-variant/40 flex items-center justify-center gap-2" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+        WhatsApp Us
+      </a>
+      <a class="w-full text-center font-label-lg text-label-lg px-4 py-3 rounded-full bg-gradient-to-r from-primary-container via-purple-600 to-secondary text-surface-container-lowest font-bold shadow-[0_0_24px_-4px_rgba(93,230,255,0.4)] flex items-center justify-center gap-2" href="contact.html#book-call">
+        <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+        Book Free Strategy Call
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="w-full pt-20 bg-background flex-1 pb-24 md:pb-0">
+    <div class="flex flex-col w-full text-on-surface antialiased overflow-hidden">
+      <div class="flex flex-col w-full">
+<!-- Top Ambience Radial Glows -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-primary-container/20 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-96 -left-48 w-[600px] h-[400px] bg-secondary/15 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+<div class="absolute top-[1200px] -right-48 w-[650px] h-[450px] bg-primary/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+<!-- 1. HERO SECTION -->
+<section class="w-full max-w-[1240px] mx-auto px-6 lg:px-10 pt-8 pb-20 lg:pt-14 lg:pb-28">
+<!-- Eyebrow Badge -->
+<div class="flex justify-center mb-6">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-high/80 border border-primary/30 shadow-lg shadow-primary-container/20 backdrop-blur-xl">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-[0.14em]">
+            AI Automation &amp; Customer Engagement • 24/7 Autonomous Revenue Operations
+          </span>
+</div>
+</div>
+<!-- Main Hero Heading -->
+<div class="text-center max-w-4xl mx-auto space-y-5">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight leading-[1.12]">
+          AI That Captures Leads and <span class="bg-gradient-to-r from-primary via-secondary to-primary-fixed bg-clip-text text-transparent">Saves Your Team Time</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+          Zyntara builds autonomous AI chatbots, voice agents, and connected neural workflows that respond in seconds, disqualify tire-kickers, and sync high-intent revenue opportunities straight to your CRM.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-4 pt-3">
+<a class="group relative inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-primary-container via-inverse-primary to-secondary-container text-white font-label-lg text-label-lg shadow-xl shadow-primary-container/30 hover:shadow-secondary/25 hover:-translate-y-0.5 transition-all duration-300" href="#consultation-booking">
+<span>Book Free AI Consultation</span>
+<span class="text-secondary font-bold text-base">✦</span>
+</a>
+<a class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-surface-container-high/70 hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg border border-outline-variant/40 hover:border-secondary/40 backdrop-blur-md transition-all duration-200" href="#how-it-works">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>See How It Works</span>
+</a>
+</div>
+</div>
+<!-- Telemetry Metric Pill Badges -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4 mt-12 max-w-4xl mx-auto">
+<div class="p-4 rounded-2xl bg-surface-container-low/80 border border-outline-variant/30 backdrop-blur-xl flex flex-col items-center text-center">
+<span class="font-headline-lg text-headline-lg text-secondary">&lt; 3 Sec</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase mt-1">First Response Time</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low/80 border border-outline-variant/30 backdrop-blur-xl flex flex-col items-center text-center">
+<span class="font-headline-lg text-headline-lg text-primary">94.8%</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase mt-1">Lead Qualification Accuracy</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low/80 border border-outline-variant/30 backdrop-blur-xl flex flex-col items-center text-center">
+<span class="font-headline-lg text-headline-lg text-white">3.2x</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase mt-1">Pipeline Velocity Spike</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low/80 border border-outline-variant/30 backdrop-blur-xl flex flex-col items-center text-center">
+<span class="font-headline-lg text-headline-lg text-tertiary">24/7/365</span>
+<span class="font-label-mono text-label-mono text-on-surface-variant uppercase mt-1">Zero Human Fatigue</span>
+</div>
+</div>
+<!-- Live Split-Screen Interactive Cockpit -->
+<div class="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+<!-- Left Panel: Website AI Chatbot -->
+<div class="rounded-3xl bg-surface-container-low/90 border border-outline-variant/40 p-6 flex flex-col justify-between shadow-2xl backdrop-blur-2xl relative overflow-hidden group hover:border-primary/40 transition-colors">
+<div class="absolute -top-20 -right-20 w-44 h-44 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Chat Top Bar -->
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="relative w-9 h-9 rounded-xl bg-primary-container/40 border border-primary/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-2 ring-surface-container-low"></span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-sm font-semibold text-white">Zyntara Concierge</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-label-mono text-[10px]">LIVE ON SITE</span>
+</div>
+<p class="text-xs text-on-surface-variant">Conversational Lead Qualifier v4.2</p>
+</div>
+</div>
+<span class="font-label-mono text-[11px] text-on-surface-variant/70">Session #892-A</span>
+</div>
+<!-- Conversation Thread -->
+<div class="space-y-4 my-6 font-body-sm text-body-sm">
+<!-- Visitor Message -->
+<div class="flex justify-end">
+<div class="max-w-[85%] rounded-2xl rounded-tr-sm bg-surface-container-highest px-4 py-3 text-on-surface shadow-md">
+<p class="leading-relaxed">Hi, we are generating ~120 leads/month from Google Ads but our sales reps take 4-6 hours to call them back. Can you help?</p>
+<div class="text-right mt-1">
+<span class="text-[10px] text-on-surface-variant font-mono">14:02 · Delivered</span>
+</div>
+</div>
+</div>
+<!-- Agent Message -->
+<div class="flex justify-start items-start gap-2.5">
+<div class="w-6 h-6 rounded-lg bg-primary/20 flex items-center justify-center text-secondary shrink-0 mt-1">
+<span class="material-symbols-outlined text-[14px]">neurology</span>
+</div>
+<div class="max-w-[88%] rounded-2xl rounded-tl-sm bg-surface-container-high/90 border border-outline-variant/30 p-4 text-on-surface shadow-lg space-y-3">
+<p class="leading-relaxed text-slate-100">
+<span class="text-secondary font-semibold">Absolutely.</span> With Zyntara's Instant Qualification Agent, inbound leads are qualified within <strong class="text-white font-semibold">15 seconds</strong> via autonomous web chat &amp; WhatsApp, then automatically routed into your CRM with executive summary bullets.
+                </p>
+<p class="text-xs text-on-surface-variant">Would you like to review an interactive demo tailored to your stack or book an AI diagnostic call?</p>
+<!-- Interactive Pill Options -->
+<div class="flex flex-wrap gap-2 pt-1">
+<button class="px-3 py-1.5 rounded-full bg-primary-container/40 hover:bg-primary-container/70 border border-primary/40 text-primary font-label-mono text-[11px] transition-colors flex items-center gap-1.5 cursor-pointer">
+<span class="material-symbols-outlined text-[13px]">calendar_today</span>
+                    Book 15-Min Live Demo
+                  </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-highest/60 hover:bg-surface-container-highest border border-outline-variant/40 text-slate-300 font-label-mono text-[11px] transition-colors cursor-pointer">
+                    View Architecture &amp; Pricing
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Chat Input Mockup -->
+<div class="pt-2">
+<div class="flex items-center gap-2 px-3.5 py-2.5 rounded-2xl bg-surface-container-highest/70 border border-outline-variant/40 focus-within:border-secondary transition-colors">
+<span class="material-symbols-outlined text-outline text-[18px]">chat_bubble_outline</span>
+<input class="bg-transparent text-xs text-on-surface placeholder:text-on-surface-variant/60 w-full focus:outline-none" placeholder="Type your message or click an option above..." readonly="" type="text"/>
+<button class="w-7 h-7 rounded-xl bg-primary text-on-primary flex items-center justify-center hover:opacity-90">
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Panel: Neural AI Voice Agent -->
+<div class="rounded-3xl bg-surface-container-low/90 border border-outline-variant/40 p-6 flex flex-col justify-between shadow-2xl backdrop-blur-2xl relative overflow-hidden group hover:border-secondary/40 transition-colors">
+<div class="absolute -bottom-20 -left-20 w-44 h-44 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Voice Top Bar -->
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="relative w-9 h-9 rounded-xl bg-secondary/15 border border-secondary/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+<span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-sm font-semibold text-white">Zyntara Voice Gateway</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-mono text-[10px]">REAL-TIME STREAM</span>
+</div>
+<p class="text-xs text-on-surface-variant">Inbound &amp; Outbound Dispatcher</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-mono text-[11px] text-secondary font-semibold">Latency: 380ms</span>
+<p class="text-[10px] text-on-surface-variant">Ultra-Low Audio Pipeline</p>
+</div>
+</div>
+<!-- Waveform Visualizer -->
+<div class="my-5 p-4 rounded-2xl bg-surface-container-highest/40 border border-outline-variant/20 flex flex-col items-center justify-center gap-2">
+<div class="flex items-center gap-1.5 h-10 w-full justify-center">
+<span class="w-1 bg-secondary rounded-full h-3 animate-[pulse_1s_infinite]"></span>
+<span class="w-1 bg-secondary rounded-full h-6 animate-[pulse_0.7s_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-9 animate-[pulse_0.9s_infinite]"></span>
+<span class="w-1 bg-primary-fixed rounded-full h-5 animate-[pulse_1.1s_infinite]"></span>
+<span class="w-1 bg-secondary rounded-full h-8 animate-[pulse_0.8s_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-10 animate-[pulse_1.3s_infinite]"></span>
+<span class="w-1 bg-secondary rounded-full h-7 animate-[pulse_0.6s_infinite]"></span>
+<span class="w-1 bg-secondary rounded-full h-4 animate-[pulse_1s_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-8 animate-[pulse_0.9s_infinite]"></span>
+<span class="w-1 bg-secondary rounded-full h-6 animate-[pulse_0.75s_infinite]"></span>
+<span class="w-1 bg-primary rounded-full h-3 animate-[pulse_1.2s_infinite]"></span>
+</div>
+<div class="flex items-center justify-between w-full text-[10px] font-mono text-on-surface-variant px-2">
+<span>● Call Duration: 01:24</span>
+<span>HD Audio Stream • Noise Cancellation 99.4%</span>
+</div>
+</div>
+<!-- Live Transcript Stream -->
+<div class="space-y-3 font-body-sm text-xs text-on-surface">
+<div class="p-3 rounded-xl bg-surface-container-high/60 border border-outline-variant/20">
+<span class="font-label-mono text-[10px] uppercase text-secondary font-semibold">AI Voice:</span>
+<p class="mt-0.5 text-slate-200">"Good afternoon! Thanks for calling Apex Logistics. I understand you're inquiring about enterprise fleet tracking integration. Could I get your fleet size and current TMS platform?"</p>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-highest/60 border border-outline-variant/20">
+<span class="font-label-mono text-[10px] uppercase text-slate-400 font-semibold">Caller (VP Ops):</span>
+<p class="mt-0.5 text-slate-200">"Yes, we run 80 vehicles currently on Samsara, looking to migrate dispatch automations by next month."</p>
+</div>
+<!-- Real-time Qualification Tag Badge -->
+<div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/40 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">verified</span>
+<div>
+<span class="font-label-mono text-[11px] font-bold text-emerald-300">TIER-1 ENTERPRISE QUALIFIED</span>
+<p class="text-[10px] text-emerald-200/80">Est. Deal Value: $40,000+ • High Urgency</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[10px]">Score 98/100</span>
+</div>
+</div>
+<!-- Telemetry Footer Indicator -->
+<div class="pt-4 mt-2 border-t border-outline-variant/20 flex items-center justify-between text-[11px] text-on-surface-variant font-mono">
+<div class="flex items-center gap-1.5 text-cyan-300">
+<span class="material-symbols-outlined text-[15px]">sync_alt</span>
+<span>HubSpot Deal #4092 Auto-Created</span>
+</div>
+<span class="text-slate-400">Sales Rep SMS Alerted</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. FOUR CORE AI SOLUTIONS (Feature Grid) -->
+<section class="w-full max-w-[1240px] mx-auto px-6 lg:px-10 py-20 border-t border-outline-variant/20">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/20 border border-primary/30 text-primary font-label-mono text-label-mono uppercase">
+          Enterprise Product Suite
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-white">Full-Funnel Autonomous AI Infrastructure</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Engineered to replace manual communication bottlenecks with relentless machine-speed execution.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Solution 1: Website AI Chatbot -->
+<div class="rounded-3xl p-8 bg-surface-container-low/80 border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 backdrop-blur-xl relative overflow-hidden group shadow-xl">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-[26px]">chat</span>
+</div>
+<span class="font-label-mono text-[11px] text-secondary uppercase tracking-widest font-semibold">Real-Time Web Conversion</span>
+<h3 class="font-headline-lg text-headline-lg text-white mt-1 mb-3">Website AI Chatbot</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+            Custom LLM agents grounded strictly in your proprietary documentation, service catalogs, case studies, and pricing guardrails. Intercepts anonymous visitors, answers nuanced questions, handles objections, and secures qualified demo bookings around the clock.
+          </p>
+<ul class="space-y-2 text-xs font-mono text-slate-300 border-t border-outline-variant/30 pt-4">
+<li class="flex items-center gap-2"><span class="text-secondary font-bold">✓</span> Zero hallucination vector knowledge engine</li>
+<li class="flex items-center gap-2"><span class="text-secondary font-bold">✓</span> Integrated Calendly, Cal.com &amp; Google Calendar</li>
+<li class="flex items-center gap-2"><span class="text-secondary font-bold">✓</span> Dynamic buyer objection handling sequences</li>
+</ul>
+</div>
+<!-- Solution 2: AI Voice Agent -->
+<div class="rounded-3xl p-8 bg-surface-container-low/80 border border-outline-variant/30 hover:border-secondary/50 transition-all duration-300 backdrop-blur-xl relative overflow-hidden group shadow-xl">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl group-hover:bg-secondary/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-2xl bg-secondary/15 border border-secondary/30 flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined text-[26px]">call</span>
+</div>
+<span class="font-label-mono text-[11px] text-secondary uppercase tracking-widest font-semibold">Sub-400ms Voice Latency</span>
+<h3 class="font-headline-lg text-headline-lg text-white mt-1 mb-3">AI Voice Agent</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+            Ultra-realistic conversational phone intelligence. Picks up instantly on the first ring, handles concurrent calls with zero busy tones, qualifies inbound inquiries via dynamic dialogue trees, and logs structured bullet-point call summaries with call recordings into your CRM.
+          </p>
+<ul class="space-y-2 text-xs font-mono text-slate-300 border-t border-outline-variant/30 pt-4">
+<li class="flex items-center gap-2"><span class="text-secondary font-bold">✓</span> Natural human inflections and vocal warmth</li>
+<li class="flex items-center gap-2"><span class="text-secondary font-bold">✓</span> Automated after-hours triage and emergency escalation</li>
+<li class="flex items-center gap-2"><span class="text-secondary font-bold">✓</span> Outbound speed-to-lead follow-up dispatching</li>
+</ul>
+</div>
+<!-- Solution 3: Lead Qualification Automation -->
+<div class="rounded-3xl p-8 bg-surface-container-low/80 border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 backdrop-blur-xl relative overflow-hidden group shadow-xl">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-2xl bg-primary-container/30 border border-primary/30 flex items-center justify-center text-primary-fixed mb-6">
+<span class="material-symbols-outlined text-[26px]">filter_alt</span>
+</div>
+<span class="font-label-mono text-[11px] text-primary uppercase tracking-widest font-semibold">Tire-Kicker Elimination</span>
+<h3 class="font-headline-lg text-headline-lg text-white mt-1 mb-3">Lead Qualification Automation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+            Stop wasting senior executive calendar hours on unqualified inquiries. Our system algorithmically calculates budget criteria, buying timeline, technical requirements, and authority matrices (BANT) before allowing visitors to book strategy calls.
+          </p>
+<ul class="space-y-2 text-xs font-mono text-slate-300 border-t border-outline-variant/30 pt-4">
+<li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span> Multi-variable lead scoring and spam filtering</li>
+<li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span> Automated self-serve routing for sub-tier budgets</li>
+<li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span> Instant executive Slack &amp; SMS alerts for Whale leads</li>
+</ul>
+</div>
+<!-- Solution 4: CRM & Workflow Automation -->
+<div class="rounded-3xl p-8 bg-surface-container-low/80 border border-outline-variant/30 hover:border-secondary/50 transition-all duration-300 backdrop-blur-xl relative overflow-hidden group shadow-xl">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl group-hover:bg-secondary/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-2xl bg-secondary/15 border border-secondary/30 flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined text-[26px]">hub</span>
+</div>
+<span class="font-label-mono text-[11px] text-secondary uppercase tracking-widest font-semibold">Zero-Manual-Entry Data Pipes</span>
+<h3 class="font-headline-lg text-headline-lg text-white mt-1 mb-3">CRM &amp; Workflow Automation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+            The connective neural tissue of your sales operation. Webhooks bind chat conversations, voice call logs, WhatsApp dialogues, and ad campaigns seamlessly into HubSpot, Salesforce, GoHighLevel, Twilio, Make, and Notion with complete data enrichment.
+          </p>
+<ul class="space-y-2 text-xs font-mono text-slate-300 border-t border-outline-variant/30 pt-4">
+<li class="flex items-center gap-2"><span class="text-secondary font-bold">✓</span> Instant deal stage automation &amp; pipeline hygiene</li>
+<li class="flex items-center gap-2"><span class="text-secondary font-bold">✓</span> Automated call transcript parsing &amp; executive notes</li>
+<li class="flex items-center gap-2"><span class="text-secondary font-bold">✓</span> Custom bidirectional API integrations</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- 3. DEEP DIVE: WEBSITE AI CHATBOT -->
+<section class="w-full max-w-[1240px] mx-auto px-6 lg:px-10 py-20 border-t border-outline-variant/20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Product Breakdown -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/30 text-secondary font-label-mono text-label-mono uppercase">
+            Product Deep-Dive 01
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-white leading-tight">
+            AI Chatbot — Convert Anonymous Traffic into <span class="text-secondary">Closed Pipeline</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Most website visitors bounce because static web pages can't answer nuanced questions immediately. Zyntara's conversational agent turns passive browsing into an authoritative diagnostic sales conversation.
+          </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-3.5">
+<div class="w-6 h-6 rounded-lg bg-primary/20 flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Answers Common Customer Questions Instantly</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Trained directly on your whitepapers, FAQs, rate cards, and technical specs with strict guardrails preventing inaccurate statements.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-6 h-6 rounded-lg bg-secondary/20 flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Captures High-Intent Leads Organically</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Progressive conversational profiling that naturally collects email, phone number, and specific business needs without intimidating long forms.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-6 h-6 rounded-lg bg-primary/20 flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Recommends Relevant Services &amp; Packages</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Algorithmic capability matching that steers enterprise prospects toward tailored retainers while routing SMBs to modular self-serve solutions.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-6 h-6 rounded-lg bg-secondary/20 flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Direct Calendar Booking Integration</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Prospects select time slots directly inside the chat window, instantly syncing to Google Calendar or Calendly with automatic confirmation emails.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<div class="w-6 h-6 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Seamless WhatsApp &amp; Human Handshake</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Escalate high-priority tier-1 deals directly to your executive's private WhatsApp or live rep with full conversational context attached.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Modern Chat Mockup Widget -->
+<div class="lg:col-span-6">
+<div class="rounded-3xl bg-surface-container-low border border-outline-variant/40 shadow-2xl p-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-60 h-60 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Chat Widget Header -->
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-container to-secondary flex items-center justify-center text-white font-bold shadow-md">
+                  Z
+                </div>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Zyntara Growth Advisor</h4>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span class="text-[11px] text-on-surface-variant">Active now • Responds in &lt; 2 seconds</span>
+</div>
+</div>
+</div>
+<button class="text-outline hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Dialogue Body -->
+<div class="space-y-4 py-5 font-body-sm text-xs">
+<div class="flex justify-start">
+<div class="max-w-[85%] rounded-2xl rounded-tl-sm bg-surface-container-high/80 border border-outline-variant/20 p-3.5 text-slate-200">
+                  Welcome to Zyntara! Are you looking to automate inbound lead qualification, voice phone calls, or build a unified CRM workflow?
+                </div>
+</div>
+<div class="flex justify-end">
+<div class="max-w-[80%] rounded-2xl rounded-tr-sm bg-primary-container text-white p-3.5 shadow-md">
+                  We need both web chat and automatic CRM syncing for our B2B agency.
+                </div>
+</div>
+<!-- Recommendation Card inside Chat -->
+<div class="p-4 rounded-2xl bg-surface-container-highest/60 border border-secondary/30 space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-mono text-[10px] uppercase text-secondary font-semibold">Recommended Deployment</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-mono text-[10px]">Tier-1 Match</span>
+</div>
+<h5 class="font-headline-sm text-xs font-bold text-white">Zyntara Autonomous Growth Suite</h5>
+<p class="text-[11px] text-on-surface-variant leading-relaxed">
+                  Includes Custom Web AI Agent + Real-Time HubSpot/Salesforce Sync + WhatsApp Escalation.
+                </p>
+<!-- Embedded Micro Booking Action -->
+<div class="pt-2 border-t border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-secondary text-[16px]">event_available</span>
+<span class="text-[11px] font-medium">Tomorrow: 3 slots open</span>
+</div>
+<button class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-mono text-[10px] font-bold hover:brightness-110 transition-all">
+                    Confirm Slot ✦
+                  </button>
+</div>
+</div>
+</div>
+<!-- Chat Footer Input Mockup -->
+<div class="pt-2 border-t border-outline-variant/20 flex items-center gap-2">
+<div class="flex-1 bg-surface-container-highest/40 rounded-xl px-3 py-2 text-xs text-on-surface-variant flex items-center justify-between">
+<span>Ask about pricing, integration, or SLA...</span>
+<span class="material-symbols-outlined text-[16px] text-outline">attachment</span>
+</div>
+<div class="w-8 h-8 rounded-xl bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. DEEP DIVE: AI VOICE AGENT -->
+<section class="w-full max-w-[1240px] mx-auto px-6 lg:px-10 py-20 border-t border-outline-variant/20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Call-Flow Architecture Visual -->
+<div class="lg:col-span-6 order-2 lg:order-1">
+<div class="rounded-3xl bg-surface-container-low border border-outline-variant/40 shadow-2xl p-6 lg:p-8 relative">
+<div class="flex items-center justify-between mb-6 pb-4 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary animate-ping"></span>
+<span class="font-headline-sm text-sm font-semibold text-white">Voice Agent Telemetry Pipeline</span>
+</div>
+<span class="font-label-mono text-[11px] text-on-surface-variant font-mono">0.38s End-to-End</span>
+</div>
+<!-- Node Pipeline Steps -->
+<div class="space-y-4 relative">
+<!-- Connector Vertical Line -->
+<div class="absolute left-5 top-4 bottom-4 w-0.5 bg-gradient-to-b from-secondary via-primary to-emerald-400 -z-0"></div>
+<!-- Node 1 -->
+<div class="relative z-10 flex items-start gap-4 p-3.5 rounded-2xl bg-surface-container-high/80 border border-outline-variant/30 backdrop-blur-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest border border-secondary/40 flex items-center justify-center text-secondary shrink-0 font-mono text-xs font-bold">
+                  01
+                </div>
+<div>
+<h4 class="font-headline-sm text-xs font-bold text-white flex items-center gap-2">
+                    Incoming Business Call
+                    <span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-mono text-[9px]">0.4s Pick-up</span>
+</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Inbound ring routed via SIP trunk; zero busy tones even during sudden campaign spikes.</p>
+</div>
+</div>
+<!-- Node 2 -->
+<div class="relative z-10 flex items-start gap-4 p-3.5 rounded-2xl bg-surface-container-high/80 border border-outline-variant/30 backdrop-blur-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest border border-primary/40 flex items-center justify-center text-primary shrink-0 font-mono text-xs font-bold">
+                  02
+                </div>
+<div>
+<h4 class="font-headline-sm text-xs font-bold text-white flex items-center gap-2">
+                    Natural Voice AI Answers
+                    <span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary font-mono text-[9px]">Human Parity</span>
+</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Emotional cadence, natural pauses, polite interruptions handled fluidly with zero robotic delay.</p>
+</div>
+</div>
+<!-- Node 3 -->
+<div class="relative z-10 flex items-start gap-4 p-3.5 rounded-2xl bg-surface-container-high/80 border border-outline-variant/30 backdrop-blur-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest border border-secondary/40 flex items-center justify-center text-secondary shrink-0 font-mono text-xs font-bold">
+                  03
+                </div>
+<div>
+<h4 class="font-headline-sm text-xs font-bold text-white flex items-center gap-2">
+                    Intent &amp; Criteria Qualification
+                    <span class="px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-mono text-[9px]">BANT Matrix</span>
+</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Assesses budget requirements, company size, buying timeline, and decision-maker status.</p>
+</div>
+</div>
+<!-- Node 4 -->
+<div class="relative z-10 flex items-start gap-4 p-3.5 rounded-2xl bg-surface-container-high/80 border border-outline-variant/30 backdrop-blur-md">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest border border-primary/40 flex items-center justify-center text-primary shrink-0 font-mono text-xs font-bold">
+                  04
+                </div>
+<div>
+<h4 class="font-headline-sm text-xs font-bold text-white flex items-center gap-2">
+                    Structured Summary &amp; Transcription
+                    <span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary font-mono text-[9px]">Instant LLM Parse</span>
+</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Executive bullet points, deal grade, objections raised, and recording securely logged in CRM.</p>
+</div>
+</div>
+<!-- Node 5 -->
+<div class="relative z-10 flex items-start gap-4 p-3.5 rounded-2xl bg-surface-container-high/80 border border-emerald-500/40 backdrop-blur-md">
+<div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-400 flex items-center justify-center text-emerald-300 shrink-0 font-mono text-xs font-bold">
+                  05
+                </div>
+<div>
+<h4 class="font-headline-sm text-xs font-bold text-emerald-300 flex items-center gap-2">
+                    Instant Team Routing &amp; SMS
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px]">Live Dispatch</span>
+</h4>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">High-priority SMS ping to sales reps + calendar invitation automatically populated.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Feature List Breakdown -->
+<div class="lg:col-span-6 order-1 lg:order-2 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/20 border border-primary/30 text-primary font-label-mono text-label-mono uppercase">
+            Product Deep-Dive 02
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-white leading-tight">
+            AI Voice Agent — Zero Missed Calls, <span class="text-secondary">Infinite Scalability</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Never let a hot inbound phone lead go to voicemail again. Zyntara AI Voice handles 1 or 1,000 phone calls simultaneously with human-parity vocal warmth and uncompromising professionalism.
+          </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-3.5">
+<span class="text-secondary text-base font-bold">✦</span>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Answers Inbound Business Calls 24/7/365</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Provides round-the-clock availability across all time zones with zero overtime cost or operator burnout.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="text-secondary text-base font-bold">✦</span>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Qualifies Inbound Callers with Contextual Adaptability</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Does not rely on clunky keypad IVRs. Engages callers naturally to confirm budget, timeline, and exact scope.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="text-secondary text-base font-bold">✦</span>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Answers Complex Technical &amp; Service FAQs</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Connected in real-time to your proprietary knowledge base to deliver accurate corporate information.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="text-secondary text-base font-bold">✦</span>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Generates Automated Executive Call Summaries</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Extracts structured bullet points, key questions, sentiment score, and action items directly into CRM.</p>
+</div>
+</div>
+<div class="flex items-start gap-3.5">
+<span class="text-secondary text-base font-bold">✦</span>
+<div>
+<h4 class="font-headline-sm text-sm font-semibold text-white">Hot Transfer Escalation for Enterprise Deals</h4>
+<p class="font-body-sm text-xs text-on-surface-variant mt-0.5">Instantly transfers VIP prospects to your sales team's direct mobile line with whispered briefing.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. HOW IT WORKS: 4-STEP IMPLEMENTATION -->
+<section class="w-full max-w-[1240px] mx-auto px-6 lg:px-10 py-20 border-t border-outline-variant/20" id="how-it-works">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/30 text-secondary font-label-mono text-label-mono uppercase">
+          Proven Engineering Methodology
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-white">How It Works: From Audit to Autonomous Scale</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          We design, build, test, and deploy customized AI agents in under 14 business days.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Step 01 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-secondary/50 transition-all flex flex-col justify-between group shadow-lg">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/30 group-hover:text-secondary transition-colors font-bold mb-4">
+              01
+            </div>
+<h3 class="font-headline-sm text-base font-bold text-white mb-2">Understand Business &amp; Customer Journey</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              We conduct a technical audit of your sales transcripts, recorded calls, customer FAQs, objection patterns, and ideal buyer personas.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<span class="font-label-mono text-[10px] text-secondary uppercase">Milestone: Discovery Blueprint</span>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between group shadow-lg">
+<div>
+<div class="font-headline-xl text-headline-xl text-primary/30 group-hover:text-primary transition-colors font-bold mb-4">
+              02
+            </div>
+<h3 class="font-headline-sm text-base font-bold text-white mb-2">Identify Repetitive Tasks &amp; Lead Gaps</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              We pinpoint where leads fall through the cracks: delayed response latency, missed after-hours calls, and manual CRM friction.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<span class="font-label-mono text-[10px] text-primary uppercase">Milestone: Bottleneck Matrix</span>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-secondary/50 transition-all flex flex-col justify-between group shadow-lg">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/30 group-hover:text-secondary transition-colors font-bold mb-4">
+              03
+            </div>
+<h3 class="font-headline-sm text-base font-bold text-white mb-2">Build AI Chatbot, Voice Agent &amp; Workflows</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              Our engineers calibrate system prompts, build RAG vector indexes, configure acoustic voice models, and code safety guardrails.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<span class="font-label-mono text-[10px] text-secondary uppercase">Milestone: Staging Prototype</span>
+</div>
+</div>
+<!-- Step 04 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col justify-between group shadow-lg">
+<div>
+<div class="font-headline-xl text-headline-xl text-primary/30 group-hover:text-primary transition-colors font-bold mb-4">
+              04
+            </div>
+<h3 class="font-headline-sm text-base font-bold text-white mb-2">Connect Tools, Test, Launch &amp; Improve</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+              We sync your CRM &amp; telephony, run stress tests across 100+ edge cases, train your team, and continuously tune accuracy.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<span class="font-label-mono text-[10px] text-primary uppercase">Milestone: Autonomous Production</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. AUTOMATION USE CASES (6 Multi-Industry Cards) -->
+<section class="w-full max-w-[1240px] mx-auto px-6 lg:px-10 py-20 border-t border-outline-variant/20">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/20 border border-primary/30 text-primary font-label-mono text-label-mono uppercase">
+          Real-World Impact
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-white">Proven Automation Use Cases</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          See how leading professional firms, service companies, and B2B enterprises leverage Zyntara automation.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-secondary/40 transition-colors shadow-lg space-y-3">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-white">Instant Lead Follow-Up</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Trigger automated conversational SMS, voice calls, and WhatsApp messages within 10 seconds of a form submission, before prospects consider competitors.
+          </p>
+<div class="pt-2 text-[11px] font-mono text-secondary">
+            ⚡ Avg Response: 8.4 Seconds
+          </div>
+</div>
+<!-- Card 2 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/40 transition-colors shadow-lg space-y-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">forum</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-white">WhatsApp Business Automation</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Autonomous WhatsApp bots answering product catalogs, issuing quote estimates, booking site visits, and re-engaging stalled prospects with natural context.
+          </p>
+<div class="pt-2 text-[11px] font-mono text-primary">
+            💬 88% Message Open Rate
+          </div>
+</div>
+<!-- Card 3 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-secondary/40 transition-colors shadow-lg space-y-3">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">event_repeat</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-white">Appointment Reminders &amp; Rescheduling</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Reduce consultation no-show rates by 40% with smart two-way confirmation dialogue and instant self-service rescheduling links.
+          </p>
+<div class="pt-2 text-[11px] font-mono text-secondary">
+            📅 -42% Demo No-Show Rate
+          </div>
+</div>
+<!-- Card 4 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/40 transition-colors shadow-lg space-y-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">auto_fix_high</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-white">CRM Updates &amp; Deal Hygiene</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Eliminate manual sales rep data entry. Our neural workflows enrich company size, log meeting summaries, tag objection categories, and progress pipeline stages.
+          </p>
+<div class="pt-2 text-[11px] font-mono text-primary">
+            📈 100% CRM Pipeline Hygiene
+          </div>
+</div>
+<!-- Card 5 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-secondary/40 transition-colors shadow-lg space-y-3">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-white">Customer Support &amp; Tier-1 FAQs</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Resolve 70%+ of inbound inquiries instantly without staff involvement, seamlessly falling back to senior agents only when edge cases arise.
+          </p>
+<div class="pt-2 text-[11px] font-mono text-secondary">
+            ⏱️ 74% Autonomous Ticket Resolution
+          </div>
+</div>
+<!-- Card 6 -->
+<div class="p-6 rounded-3xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/40 transition-colors shadow-lg space-y-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-base font-bold text-white">Internal Operations &amp; Slack Bots</h3>
+<p class="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Equip internal account managers and technicians with AI assistants that query SOPs, check project statuses, and generate daily revenue summaries.
+          </p>
+<div class="pt-2 text-[11px] font-mono text-primary">
+            🚀 6+ Hours Saved Per Rep / Week
+          </div>
+</div>
+</div>
+</section>
+<!-- 7. LEAD CAPTURE SECTION (Diagnostic Booking) -->
+<section class="w-full max-w-[1240px] mx-auto px-6 lg:px-10 py-20 border-t border-outline-variant/20" id="consultation-booking">
+<div class="rounded-3xl bg-surface-container-low/95 border border-outline-variant/40 shadow-2xl p-8 lg:p-12 backdrop-blur-2xl relative overflow-hidden">
+<div class="absolute -top-32 -right-32 w-80 h-80 bg-primary-container/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left: Pitch & Trust Guarantee -->
+<div class="lg:col-span-5 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/30 text-secondary font-label-mono text-label-mono uppercase">
+              Confidential AI Architecture Review
+            </div>
+<h2 class="font-headline-xl text-headline-xl text-white leading-tight">
+              Ready to Automate Your Revenue Operations?
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Speak directly with our senior AI automation engineers to discover how customized chatbots and voice agents can capture 3x more qualified leads and eliminate manual busywork.
+            </p>
+<!-- Trust Checklist -->
+<div class="space-y-3 pt-2 font-body-sm text-xs text-slate-200">
+<div class="flex items-center gap-2.5">
+<span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-sm font-bold">✓</span>
+<span>Custom Live Interactive Prototype tailored to your business</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-sm font-bold">✓</span>
+<span>Full Workflow &amp; CRM Integration Roadmap (HubSpot/Salesforce)</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-sm font-bold">✓</span>
+<span>Detailed ROI &amp; Cost Savings Model (Hours Saved / Month)</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-sm font-bold">✓</span>
+<span>100% Confidential with Zero High-Pressure Sales Tactics</span>
+</div>
+</div>
+<!-- WhatsApp Direct Card -->
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-surface-container-high/80 hover:bg-surface-container-highest border border-outline-variant/30 text-slate-200 hover:text-white transition-all" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." rel="noopener noreferrer" target="_blank">
+<div class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</div>
+<div>
+<div class="text-xs font-semibold text-white">Prefer to chat on WhatsApp?</div>
+<div class="text-[11px] text-on-surface-variant font-mono">Instant response from an engineer →</div>
+</div>
+</a>
+</div>
+</div>
+<!-- Right: Interactive Diagnostic Form -->
+<div class="lg:col-span-7">
+<div class="p-6 lg:p-8 rounded-2xl bg-surface-container-high/60 border border-outline-variant/40 shadow-xl space-y-5">
+<div>
+<h3 class="font-headline-md text-headline-md text-white">Request Free AI Consultation</h3>
+<p class="font-body-sm text-xs text-on-surface-variant mt-1">Complete the brief diagnostics below and our team will prepare a custom agent blueprint.</p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Consultation request registered! An engineer will reach out within 2 hours.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Full Name -->
+<div>
+<label class="block font-label-mono text-[11px] uppercase text-on-surface-variant mb-1.5">Full Name *</label>
+<input class="w-full h-11 px-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/40 text-xs text-white placeholder:text-outline focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none transition-all" placeholder="e.g. Alex Vance" required="" type="text"/>
+</div>
+<!-- Business Name & URL -->
+<div>
+<label class="block font-label-mono text-[11px] uppercase text-on-surface-variant mb-1.5">Company &amp; Website URL *</label>
+<input class="w-full h-11 px-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/40 text-xs text-white placeholder:text-outline focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none transition-all" placeholder="e.g. Apex Dynamics • apex.io" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Phone / WhatsApp -->
+<div>
+<label class="block font-label-mono text-[11px] uppercase text-on-surface-variant mb-1.5">Phone or WhatsApp *</label>
+<input class="w-full h-11 px-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/40 text-xs text-white placeholder:text-outline focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none transition-all" placeholder="+1 (555) 019-2834" required="" type="tel"/>
+</div>
+<!-- AI Solution Dropdown -->
+<div>
+<label class="block font-label-mono text-[11px] uppercase text-on-surface-variant mb-1.5">AI Solution Needed *</label>
+<select class="w-full h-11 px-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/40 text-xs text-white focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none transition-all">
+<option class="bg-surface-container">Website AI Chatbot</option>
+<option class="bg-surface-container">AI Voice Agent</option>
+<option class="bg-surface-container">Lead Qualification Automation</option>
+<option class="bg-surface-container">CRM &amp; Workflow Automation</option>
+<option class="bg-surface-container">Full Custom AI Ecosystem</option>
+</select>
+</div>
+</div>
+<!-- Textarea -->
+<div>
+<label class="block font-label-mono text-[11px] uppercase text-on-surface-variant mb-1.5">Primary Bottleneck or Tasks to Automate</label>
+<textarea class="w-full p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/40 text-xs text-white placeholder:text-outline focus:border-secondary focus:ring-1 focus:ring-secondary focus:outline-none transition-all" placeholder="Describe current response delays, missed calls, or manual CRM entry you'd like to automate..." rows="3"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-3.5 rounded-xl bg-gradient-to-r from-primary-container via-inverse-primary to-secondary-container text-white font-label-lg text-label-lg shadow-xl shadow-primary-container/30 hover:opacity-95 hover:shadow-secondary/25 transition-all flex items-center justify-center gap-2 cursor-pointer" type="submit">
+<span>Book Free AI Consultation</span>
+<span class="text-secondary font-bold">✦</span>
+</button>
+<p class="text-center font-mono text-[10px] text-on-surface-variant/80">
+                  🔒 Enterprise NDA Compliant. Zero spam. Response within 2 hours.
+                </p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. FREQUENTLY ASKED QUESTIONS (Accordion) -->
+<section class="w-full max-w-[1240px] mx-auto px-6 lg:px-10 py-20 border-t border-outline-variant/20">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/30 text-secondary font-label-mono text-label-mono uppercase">
+          Frequently Answered Inquiries
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-white">Got Questions About Enterprise AI?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Clear answers on hallucination prevention, telephony integration, and system latency.
+        </p>
+</div>
+<div class="max-w-3xl mx-auto space-y-4">
+<!-- FAQ 1 -->
+<details class="group rounded-2xl bg-surface-container-low border border-outline-variant/30 p-5 [&amp;_summary::-webkit-details-marker]:hidden transition-all duration-200 open:border-secondary/40">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-sm font-semibold text-white">
+<span>What AI solutions does Zyntara provide?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-secondary transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Zyntara delivers four interconnected enterprise AI modules: (1) Custom conversational Website AI Chatbots trained on your proprietary documentation, (2) Ultra-low-latency AI Voice Agents handling inbound and outbound telephony, (3) Automated Lead Qualification algorithms that filter out unqualified inquiries, and (4) Autonomous CRM &amp; Workflow automations connecting chat, WhatsApp, Twilio, HubSpot, Salesforce, and internal databases.
+          </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group rounded-2xl bg-surface-container-low border border-outline-variant/30 p-5 [&amp;_summary::-webkit-details-marker]:hidden transition-all duration-200 open:border-secondary/40">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-sm font-semibold text-white">
+<span>Can the AI chatbot book appointments directly onto our calendar?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-secondary transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Yes. Zyntara AI bots natively integrate with Calendly, Cal.com, Google Calendar, and Microsoft Outlook. Once an inbound prospect satisfies your qualification criteria (such as budget and authority), the agent presents live open slots directly within the conversation window, registers the booking, sends invite confirmations, and logs the deal in your CRM.
+          </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group rounded-2xl bg-surface-container-low border border-outline-variant/30 p-5 [&amp;_summary::-webkit-details-marker]:hidden transition-all duration-200 open:border-secondary/40">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-sm font-semibold text-white">
+<span>How realistic does the AI Voice Agent sound?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-secondary transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            Our Voice Agent operates at a sub-400ms audio response latency, matching human speech cadences with zero noticeable lag. It incorporates emotional inflections, adaptive pacing, and natural handling of conversational interruptions. In live blind tests, over 91% of callers were unable to distinguish the AI voice from an experienced in-house customer service representative.
+          </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group rounded-2xl bg-surface-container-low border border-outline-variant/30 p-5 [&amp;_summary::-webkit-details-marker]:hidden transition-all duration-200 open:border-secondary/40">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-sm font-semibold text-white">
+<span>How does the system prevent AI hallucinations and false promises?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-secondary transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            We employ a strict Retrieval-Augmented Generation (RAG) architecture coupled with deterministic business logic guardrails. The agent is explicitly prohibited from guessing. If a question falls outside your indexed documentation, the agent politely states it will verify with a human specialist and initiates an escalation protocol, guaranteeing zero reputational risk.
+          </div>
+</details>
+<!-- FAQ 5 -->
+<details class="group rounded-2xl bg-surface-container-low border border-outline-variant/30 p-5 [&amp;_summary::-webkit-details-marker]:hidden transition-all duration-200 open:border-secondary/40">
+<summary class="flex items-center justify-between cursor-pointer font-headline-sm text-sm font-semibold text-white">
+<span>Which CRMs and sales software can Zyntara integrate with?</span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 group-open:text-secondary transition-transform text-[20px]">expand_more</span>
+</summary>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 font-body-sm text-xs text-on-surface-variant leading-relaxed">
+            We provide turn-key two-way synchronization with HubSpot, Salesforce, GoHighLevel, Zoho, Pipedrive, Slack, Twilio, WhatsApp Business Cloud API, Make, Zapier, and custom REST API endpoints. Data is encrypted in transit and at rest using enterprise AES-256 protocols.
+          </div>
+</details>
+</div>
+</section>
+<!-- 9. FINAL HIGH-IMPACT CTA BANNER -->
+<section class="w-full max-w-[1240px] mx-auto px-6 lg:px-10 pt-6 pb-24">
+<div class="rounded-3xl p-10 lg:p-14 bg-gradient-to-br from-surface-container via-surface-container-low to-surface-container-lowest border border-primary/30 relative overflow-hidden shadow-2xl text-center space-y-6">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-primary/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/15 border border-secondary/30 text-secondary font-label-mono text-label-mono uppercase">
+          Accelerate Your Revenue Cycle
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-white max-w-3xl mx-auto leading-tight">
+          Ready to Automate Lead Capture and Customer Follow-Up?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">
+          Deploy bespoke AI agents that qualify buyers 24/7, eliminate operational friction, and compound your sales velocity.
+        </p>
+<div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-primary-container via-inverse-primary to-secondary-container text-white font-label-lg text-label-lg shadow-xl shadow-primary-container/30 hover:shadow-secondary/25 hover:-translate-y-0.5 transition-all" href="#consultation-booking">
+<span>Book Free AI Consultation</span>
+<span class="text-secondary font-bold">✦</span>
+</a>
+<a class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-surface-container-highest hover:bg-surface-bright text-white font-label-lg text-label-lg border border-outline-variant/40 transition-colors" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+</div>
+    </div>
+  </main>
+
+  <div class="md:hidden fixed bottom-4 left-4 right-4 z-40 bg-surface-container-high/95 backdrop-blur-xl p-2 rounded-full border border-outline-variant/40 shadow-[0_4px_24px_rgba(0,0,0,0.6)] flex items-center gap-2">
+  <a class="flex-1 text-center font-label-md text-label-md py-2.5 px-3 rounded-full bg-surface-container text-on-surface flex items-center justify-center gap-1.5 border border-outline-variant/30 hover:bg-surface-container-highest transition-colors" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+    <span class="material-symbols-outlined text-[16px] text-secondary">chat</span>
+    <span>WhatsApp</span>
+  </a>
+  <a class="flex-1 text-center font-label-md text-label-md py-2.5 px-3 rounded-full bg-gradient-to-r from-primary-container via-purple-600 to-secondary text-surface-container-lowest font-bold flex items-center justify-center gap-1.5 shadow-[0_0_16px_rgba(93,230,255,0.35)] hover:opacity-95 transition-all" href="contact.html#book-call">
+    <span class="material-symbols-outlined text-[16px]">bolt</span>
+    <span>Strategy Call</span>
+  </a>
+</div>
+  <footer class="w-full bg-surface-container-lowest py-16 border-t border-outline-variant/20 shadow-[0_-1px_12px_rgba(0,0,0,0.4)]">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <!-- Col 1: Brand Info -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <img alt="Zyntara Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCq9AlNczhf-jQxlMKyyd0OYbMoZBh_Df4x_UkceZ5NzeRu4Mc9Sni9_-9mOA-lT76uaFOXSkvKlVCnmq4sITcWZ22fOdyEMSj_liQSbLVQPHrsNzjN5csM08rgThw1jljuaFQpZp9HHlFjB4DREMTGKAM239ZJUMJr1yhXI6Vp4393YzT6yNg2JHm6lTyh2pAaMhVrLmn809jmxhs-uSCZLGI93kBnG2z-S_kAu3m1GQ">
+          <span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Zyntara</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Enterprise AI automation, generative engine visibility (GEO/AEO), and autonomous digital growth infrastructure engineered for mission-critical business scale.
+        </p>
+        <div class="flex items-center gap-3 pt-2">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-xs text-secondary font-mono border border-secondary/20">
+            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Systems Active 24/7
+          </span>
+        </div>
+      </div>
+
+      <!-- Col 2: Solutions -->
+      <div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4 font-semibold">Growth Solutions</h4>
+        <ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-secondary transition-colors" href="ai-solutions.html">Autonomous AI Agents & Chatbots</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="web-development.html">High-Converting Web Development</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="app-development.html">Cloud Software & Mobile Apps</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="digital-marketing.html">Multi-Channel Digital Marketing</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="seo-services.html">Organic SEO Search Visibility</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="geo-services.html">Generative Engine Optimization (GEO)</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="aeo-services.html">Answer Engine Optimization (AEO)</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="meta-ads.html">Meta Ads (Facebook & Instagram)</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="google-ads.html">Google Ads (Search & PMax)</a></li>
+          <li><a class="hover:text-secondary transition-colors font-semibold text-secondary" href="services.html">✦ All Services Directory</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Agency & Company -->
+      <div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4 font-semibold">Agency</h4>
+        <ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-secondary transition-colors" href="about.html">About Zyntara</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="services.html">Growth Methodology</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="blog.html">Case Studies & Insights</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="contact.html">Contact Us</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="contact.html#audit-section">Free Growth Audit</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="privacy.html">Privacy Framework</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="terms.html">Terms of Scale</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Direct Access CTA -->
+      <div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4 font-semibold">Direct Access</h4>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+          Ready to deploy quantum-leap growth systems and automate your inbound pipelines?
+        </p>
+        <div class="space-y-3">
+          <a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary hover:text-on-surface transition-colors font-semibold bg-surface-container px-4 py-2.5 rounded-xl border border-secondary/20 hover:border-secondary/50 w-full justify-center" href="contact.html#book-call">
+            <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+            Schedule Protocol Call
+          </a>
+          <a class="inline-flex items-center gap-2 font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors text-xs w-full justify-center" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[16px]">chat</span>
+            Direct WhatsApp Hotline
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pt-8 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+      <p>© 2026 Zyntara AI Systems. Engineered for autonomous business growth.</p>
+      <div class="flex items-center gap-6">
+        <a class="hover:text-secondary transition-colors text-xs" href="privacy.html">Privacy Framework</a>
+        <a class="hover:text-secondary transition-colors text-xs" href="terms.html">Terms of Scale</a>
+        <a class="hover:text-secondary transition-colors text-xs" href="contact.html">Security Protocol</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  <!-- Core Interactive Scripts -->
+<script>
+// Mobile Navigation Drawer Toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const drawer = document.getElementById('mobile-nav-drawer');
+  const menuIcon = document.getElementById('mobile-menu-icon');
+  
+  if (toggleBtn && drawer) {
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = drawer.classList.toggle('hidden');
+      if (menuIcon) {
+        menuIcon.textContent = isHidden ? 'menu' : 'close';
+      }
+    });
+
+    // Close when clicking any link inside drawer
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        drawer.classList.add('hidden');
+        if (menuIcon) menuIcon.textContent = 'menu';
+      });
+    });
+  }
+
+  // Mobile Services Submenu Toggle
+  const servicesToggle = document.getElementById('mobile-services-toggle');
+  const servicesList = document.getElementById('mobile-services-list');
+  const servicesArrow = document.getElementById('mobile-services-arrow');
+  if (servicesToggle && servicesList) {
+    servicesToggle.addEventListener('click', () => {
+      servicesList.classList.toggle('hidden');
+      if (servicesArrow) {
+        servicesArrow.classList.toggle('rotate-180');
+      }
+    });
+  }
+
+  // FAQ Accordion Handlers
+  document.querySelectorAll('.faq-toggle, [data-faq-toggle]').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const item = button.closest('.faq-item') || button.parentElement;
+      const content = item.querySelector('.faq-content') || item.querySelector('[data-faq-content]') || item.nextElementSibling;
+      const icon = item.querySelector('.faq-icon') || item.querySelector('.material-symbols-outlined');
+      if (!content) return;
+      
+      const isCurrentlyHidden = content.classList.contains('hidden');
+
+      // Close all siblings
+      const parentContainer = item.closest('.faq-container') || item.parentElement;
+      if (parentContainer) {
+        parentContainer.querySelectorAll('.faq-content, [data-faq-content]').forEach(c => c.classList.add('hidden'));
+        parentContainer.querySelectorAll('.faq-icon').forEach(ic => ic.classList.remove('rotate-180'));
+      }
+
+      // Open selected
+      if (isCurrentlyHidden) {
+        content.classList.remove('hidden');
+        if (icon) icon.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Interactive Form Submissions (Audit and Contact Forms)
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+      const originalText = submitBtn ? submitBtn.innerHTML : 'Submit';
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+          <span class="inline-flex items-center gap-2">
+            <svg class="animate-spin h-4 w-4 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+            </svg>
+            Transmitting Protocol...
+          </span>
+        `;
+      }
+
+      setTimeout(() => {
+        // Success Notification Banner
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-24 right-6 z-50 bg-surface-container-high border border-secondary text-on-surface p-4 rounded-2xl shadow-[0_8px_32px_rgba(93,230,255,0.4)] flex items-center gap-3 transition-all duration-300 transform translate-y-0';
+        toast.innerHTML = `
+          <div class="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
+            <span class="material-symbols-outlined text-[20px]">check_circle</span>
+          </div>
+          <div>
+            <div class="font-headline-sm text-sm font-bold text-on-surface">Growth Inquiry Confirmed</div>
+            <div class="font-body-sm text-xs text-on-surface-variant">A Senior AI Strategist will analyze your metrics and contact you within 24 hours.</div>
+          </div>
+        `;
+        document.body.appendChild(toast);
+
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+        }
+        form.reset();
+
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateY(-10px)';
+          setTimeout(() => toast.remove(), 400);
+        }, 5000);
+      }, 900);
+    });
+  });
+});
+</script>
+</body>
+</html>

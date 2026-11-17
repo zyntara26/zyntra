@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical Growth & AI Insights — Zyntara Blog</title>
+  <meta name="description" content="Actionable frameworks, real-world case studies, and engineering deep dives on AI automation, GEO, performance marketing, and digital scale.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Practical Growth & AI Insights — Zyntara Blog">
+  <meta property="og:description" content="Actionable frameworks, real-world case studies, and engineering deep dives on AI automation, GEO, performance marketing, and digital scale.">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Practical Growth & AI Insights — Zyntara Blog">
+  <meta name="twitter:description" content="Actionable frameworks, real-world case studies, and engineering deep dives on AI automation, GEO, performance marketing, and digital scale.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%236d28d9'/><stop offset='50%' stop-color='%235de6ff'/><stop offset='100%' stop-color='%23d3bbff'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='%230f131e'/><path d='M25 30 L75 30 L38 70 L75 70' stroke='url(%23g)' stroke-width='10' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='70' cy='30' r='5' fill='%235de6ff'/><circle cx='30' cy='70' r='5' fill='%236d28d9'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    /* Custom sleek scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f131e;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #262a36;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #353946;
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface": "#0f131e",
+        "surface-dim": "#0f131e",
+        "surface-bright": "#353946",
+        "surface-container-lowest": "#0a0e19",
+        "surface-container-low": "#171b27",
+        "surface-container": "#1b1f2b",
+        "surface-container-high": "#262a36",
+        "surface-container-highest": "#303441",
+        "surface-variant": "#303441",
+        "surface-tint": "#d3bbff",
+        "on-surface": "#dfe2f2",
+        "on-surface-variant": "#ccc3d7",
+        "inverse-surface": "#dfe2f2",
+        "inverse-on-surface": "#2c303c",
+        "outline": "#958da1",
+        "outline-variant": "#4a4455",
+        "primary": "#d3bbff",
+        "on-primary": "#3f008d",
+        "primary-container": "#6d28d9",
+        "on-primary-container": "#dac5ff",
+        "inverse-primary": "#7331df",
+        "primary-fixed": "#ebddff",
+        "primary-fixed-dim": "#d3bbff",
+        "on-primary-fixed": "#250059",
+        "on-primary-fixed-variant": "#5b00c5",
+        "secondary": "#5de6ff",
+        "on-secondary": "#00363e",
+        "secondary-container": "#00cbe6",
+        "on-secondary-container": "#00515d",
+        "secondary-fixed": "#a2eeff",
+        "secondary-fixed-dim": "#2fd9f4",
+        "on-secondary-fixed": "#001f25",
+        "on-secondary-fixed-variant": "#004e5a",
+        "tertiary": "#ffb95f",
+        "on-tertiary": "#472a00",
+        "tertiary-container": "#7d4e00",
+        "on-tertiary-container": "#ffc47d",
+        "tertiary-fixed": "#ffddb8",
+        "tertiary-fixed-dim": "#ffb95f",
+        "on-tertiary-fixed": "#2a1700",
+        "on-tertiary-fixed-variant": "#653e00",
+        "error": "#ffb4ab",
+        "on-error": "#690005",
+        "error-container": "#93000a",
+        "on-error-container": "#ffdad6",
+        "background": "#0f131e",
+        "on-background": "#dfe2f2"
+      },
+      borderRadius: {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "display-hero": ["Space Grotesk", "sans-serif"],
+        "display-hero-mobile": ["Space Grotesk", "sans-serif"],
+        "headline-xl": ["Space Grotesk", "sans-serif"],
+        "headline-xl-mobile": ["Space Grotesk", "sans-serif"],
+        "headline-lg": ["Space Grotesk", "sans-serif"],
+        "headline-md": ["Space Grotesk", "sans-serif"],
+        "headline-sm": ["Space Grotesk", "sans-serif"],
+        "label-mono": ["Space Grotesk", "monospace"],
+        "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+        "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+        "body-md": ["Plus Jakarta Sans", "sans-serif"],
+        "body-sm": ["Plus Jakarta Sans", "sans-serif"]
+      }
+    }
+  }
+};
+</script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-[0_1px_8px_rgba(0,0,0,0.4)]">
+  <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+      <img alt="Zyntara Logo" class="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ALJJyrCq9AlNczhf-jQxlMKyyd0OYbMoZBh_Df4x_UkceZ5NzeRu4Mc9Sni9_-9mOA-lT76uaFOXSkvKlVCnmq4sITcWZ22fOdyEMSj_liQSbLVQPHrsNzjN5csM08rgThw1jljuaFQpZp9HHlFjB4DREMTGKAM239ZJUMJr1yhXI6Vp4393YzT6yNg2JHm6lTyh2pAaMhVrLmn809jmxhs-uSCZLGI93kBnG2z-S_kAu3m1GQ">
+      <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold group-hover:text-secondary transition-colors hidden sm:inline-block">Zyntara</span>
+    </a>
+
+    <!-- Desktop Nav Items -->
+    <nav class="hidden xl:flex items-center gap-1 bg-surface-container-low/70 px-3 py-1.5 rounded-full border border-outline-variant/30">
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="index.html">Home</a>
+      
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <a href="services.html" class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg inline-flex items-center gap-1 focus:outline-none cursor-pointer">
+          <span>Services</span>
+          <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+        </a>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-[560px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="bg-surface-container-lowest/95 backdrop-blur-2xl border border-outline-variant/40 rounded-2xl p-4 shadow-[0_12px_40px_rgba(0,0,0,0.7)] grid grid-cols-2 gap-2">
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="ai-solutions.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">smart_toy</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Complete AI Solutions</span><span class="font-label-mono text-[10px] text-on-surface-variant">24/7 AI Chatbots & Voice Agents</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="web-development.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">devices</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Website Development</span><span class="font-label-mono text-[10px] text-on-surface-variant">High-conversion portals</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="app-development.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">code</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Application Development</span><span class="font-label-mono text-[10px] text-on-surface-variant">Custom web & mobile apps</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="digital-marketing.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">campaign</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Digital Marketing</span><span class="font-label-mono text-[10px] text-on-surface-variant">Multi-channel growth funnels</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="seo-services.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">trending_up</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">SEO Visibility</span><span class="font-label-mono text-[10px] text-on-surface-variant">Organic search dominance</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="geo-services.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">neurology</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">GEO Services</span><span class="font-label-mono text-[10px] text-on-surface-variant">Generative Engine Optimization</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="aeo-services.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">record_voice_over</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">AEO Services</span><span class="font-label-mono text-[10px] text-on-surface-variant">Answer Engine & voice search</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="meta-ads.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">ad_units</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Meta Ads</span><span class="font-label-mono text-[10px] text-on-surface-variant">High-ROAS Facebook & IG</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item" href="google-ads.html">
+              <div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover/item:bg-primary-container/20"><span class="material-symbols-outlined text-[18px]">ads_click</span></div>
+              <div><span class="block font-label-md text-label-md text-on-surface group-hover/item:text-secondary transition-colors font-semibold">Google Ads</span><span class="font-label-mono text-[10px] text-on-surface-variant">High-intent Search & PMax</span></div>
+            </a>
+            <a class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-surface-container transition-colors group/item border border-secondary/20 bg-secondary/5" href="services.html">
+              <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary"><span class="material-symbols-outlined text-[18px]">hub</span></div>
+              <div><span class="block font-label-md text-label-md text-secondary font-bold">Services Overview Hub</span><span class="font-label-mono text-[10px] text-on-surface-variant">All 9 pillars & matrix</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="ai-solutions.html">AI Solutions</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="about.html">About Us</a>
+      <a class="text-secondary bg-surface-container font-bold px-3 py-1.5 rounded-full font-label-lg text-label-lg" href="blog.html">Blog</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-3 py-1.5 transition-colors font-label-lg text-label-lg" href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="flex items-center gap-3">
+      <a class="hidden md:inline-flex items-center justify-center font-label-lg text-label-lg px-4 py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface border border-outline-variant/30 transition-all hover:border-secondary/40" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[17px] mr-1.5 text-secondary">chat</span>
+        WhatsApp Us
+      </a>
+      <a class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg px-5 py-2.5 rounded-full bg-gradient-to-r from-primary-container via-purple-600 to-secondary text-surface-container-lowest font-bold shadow-[0_0_24px_-4px_rgba(93,230,255,0.4)] hover:shadow-[0_0_30px_rgba(93,230,255,0.65)] hover:opacity-95 transition-all" href="contact.html#book-call">
+        <span class="material-symbols-outlined text-[17px] mr-1.5">calendar_today</span>
+        Book Free Strategy Call
+      </a>
+      <button aria-label="Toggle Navigation Menu" class="xl:hidden p-2 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high border border-outline-variant/40 flex items-center justify-center cursor-pointer transition-colors" id="mobile-menu-toggle">
+        <span class="material-symbols-outlined" id="mobile-menu-icon">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="hidden xl:hidden bg-surface-container-lowest/98 backdrop-blur-2xl border-b border-outline-variant/30 px-6 py-6 space-y-4 max-h-[85vh] overflow-y-auto" id="mobile-nav-drawer">
+    <nav class="flex flex-col space-y-1">
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="index.html">Home</a>
+      
+      <div class="px-4 py-2 rounded-lg bg-surface-container-low/50">
+        <div class="flex items-center justify-between cursor-pointer py-1" id="mobile-services-toggle">
+          <span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">Services</span>
+          <span class="material-symbols-outlined text-[18px] text-secondary transition-transform duration-200" id="mobile-services-arrow">expand_more</span>
+        </div>
+        <div class="hidden pt-2 pl-3 border-l border-outline-variant/40 space-y-2 mt-1" id="mobile-services-list">
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="services.html">✦ All Services Overview Hub</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="ai-solutions.html">Complete AI Solutions</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="web-development.html">Website Development</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="app-development.html">Application Development</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="digital-marketing.html">Digital Marketing</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="seo-services.html">SEO (Search Engine Optimization)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="geo-services.html">GEO (Generative Engine Optimization)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="aeo-services.html">AEO (Answer Engine Optimization)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="meta-ads.html">Meta Ads (Facebook & Instagram)</a>
+          <a class="block font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface" href="google-ads.html">Google Ads (Search & PMax)</a>
+        </div>
+      </div>
+
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="ai-solutions.html">AI Solutions</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="about.html">About Us</a>
+      <a class="text-secondary bg-surface-container font-bold px-4 py-3 rounded-lg" href="blog.html">Blog & Insights</a>
+      <a class="text-on-surface-variant hover:text-on-surface px-4 py-3 rounded-lg transition-colors" href="contact.html">Contact Us</a>
+    </nav>
+    <div class="pt-4 flex flex-col gap-2.5 sm:hidden border-t border-outline-variant/30">
+      <a class="w-full text-center font-label-lg text-label-lg px-4 py-3 rounded-full bg-surface-container text-on-surface border border-outline-variant/40 flex items-center justify-center gap-2" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+        WhatsApp Us
+      </a>
+      <a class="w-full text-center font-label-lg text-label-lg px-4 py-3 rounded-full bg-gradient-to-r from-primary-container via-purple-600 to-secondary text-surface-container-lowest font-bold shadow-[0_0_24px_-4px_rgba(93,230,255,0.4)] flex items-center justify-center gap-2" href="contact.html#book-call">
+        <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+        Book Free Strategy Call
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="w-full pt-20 bg-background flex-1 pb-24 md:pb-0">
+    <div class="flex flex-col w-full text-on-surface antialiased overflow-hidden">
+      <div class="flex flex-col w-full">
+<!-- Top Ambient Glow Aura -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[350px] bg-gradient-to-b from-primary-container/20 via-secondary-container/10 to-transparent blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-48 -left-32 w-80 h-80 bg-primary-container/15 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+<div class="absolute top-72 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+<!-- Hero Header Section -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-10">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-sm mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-mono text-label-mono uppercase tracking-[0.16em] text-secondary">ZYNTARA INSIGHTS • ARCHITECTURE, GROWTH &amp; AI INTELLIGENCE</span>
+</div>
+<!-- Headline -->
+<h1 class="font-display-hero text-display-hero text-white tracking-tight leading-[1.08] mb-5">
+          Practical Growth &amp; <span class="bg-gradient-to-r from-primary via-secondary to-primary-fixed bg-clip-text text-transparent">AI Insights</span>
+</h1>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10">
+          Learn proven strategies for performance marketing, conversion engineering, search visibility (SEO/GEO/AEO), and autonomous AI automation.
+        </p>
+<!-- Live Search Bar -->
+<div class="w-full max-w-2xl relative shadow-2xl">
+<div class="relative flex items-center rounded-2xl bg-surface-container-low/90 backdrop-blur-xl px-4 py-2">
+<span class="material-symbols-outlined text-secondary ml-1 mr-3 text-[22px]">search</span>
+<input class="w-full bg-transparent border-0 text-slate-100 placeholder:text-slate-400 font-body-md text-body-md focus:ring-0 focus:outline-none py-2.5" id="article-search" placeholder="Search articles across marketing, web development, and AI..." type="text"/>
+<div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-highest text-slate-400 font-label-mono text-label-mono">
+<span>⌘</span><span>K</span>
+</div>
+</div>
+<div class="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-primary-container/40 via-secondary-container/20 to-primary-container/40 -z-10 blur-sm opacity-50"></div>
+</div>
+</div>
+</section>
+<!-- Categories Filter Bar -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-4">
+<div class="flex items-center gap-2 overflow-x-auto pb-4 pt-1 no-scrollbar -mx-2 px-2" id="category-filter-bar">
+<button class="cat-pill active-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-primary-container text-white shadow-lg shadow-primary-container/30" data-cat="all">
+          All
+        </button>
+<button class="cat-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-surface-container-high/60 text-slate-300 hover:text-white hover:bg-surface-container-highest" data-cat="digital-marketing">
+          Digital Marketing
+        </button>
+<button class="cat-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-surface-container-high/60 text-slate-300 hover:text-white hover:bg-surface-container-highest" data-cat="website-development">
+          Website Development
+        </button>
+<button class="cat-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-surface-container-high/60 text-slate-300 hover:text-white hover:bg-surface-container-highest" data-cat="application-development">
+          Application Development
+        </button>
+<button class="cat-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-surface-container-high/60 text-slate-300 hover:text-white hover:bg-surface-container-highest" data-cat="seo">
+          SEO
+        </button>
+<button class="cat-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-surface-container-high/60 text-slate-300 hover:text-white hover:bg-surface-container-highest" data-cat="geo">
+          GEO
+        </button>
+<button class="cat-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-surface-container-high/60 text-slate-300 hover:text-white hover:bg-surface-container-highest" data-cat="aeo">
+          AEO
+        </button>
+<button class="cat-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-surface-container-high/60 text-slate-300 hover:text-white hover:bg-surface-container-highest" data-cat="meta-ads">
+          Meta Ads
+        </button>
+<button class="cat-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-surface-container-high/60 text-slate-300 hover:text-white hover:bg-surface-container-highest" data-cat="google-ads">
+          Google Ads
+        </button>
+<button class="cat-pill whitespace-nowrap px-4 py-2 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-surface-container-high/60 text-slate-300 hover:text-white hover:bg-surface-container-highest" data-cat="ai-automation">
+          AI Automation
+        </button>
+</div>
+</section>
+<!-- Featured Hero Article -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-6 pb-16">
+<div class="relative rounded-3xl bg-surface-container-low/80 backdrop-blur-xl overflow-hidden p-6 sm:p-10 lg:p-12 shadow-2xl transition-all duration-300 hover:shadow-cyan-950/20 group">
+<!-- Ambient radial interior flare -->
+<div class="absolute -right-24 -bottom-24 w-[420px] h-[420px] bg-secondary-container/10 rounded-full blur-[90px] pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-[360px] h-[360px] bg-primary-container/20 rounded-full blur-[80px] pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<!-- Text Content (7 cols) -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/30 text-primary-fixed mb-5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-mono text-label-mono font-bold tracking-wider">AI AUTOMATION • FEATURED READ</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white tracking-tight leading-tight mb-4 group-hover:text-cyan-200 transition-colors">
+              How AI Chatbots &amp; Autonomous Voice Agents Help Businesses Capture 3x More Leads
+            </h2>
+<p class="font-body-md text-body-md text-slate-300 leading-relaxed mb-6">
+              Discover how combining vector-grounded website chatbots with sub-400ms voice agents closes the after-hours response gap, qualifies prospects via BANT criteria, and syncs directly to your CRM.
+            </p>
+<div class="flex flex-wrap items-center gap-y-2 gap-x-4 text-slate-400 font-label-md text-label-md mb-8">
+<span class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+                6 min read
+              </span>
+<span class="text-slate-600">•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                Published Oct 2026
+              </span>
+<span class="text-slate-600">•</span>
+<span class="flex items-center gap-1.5 text-slate-300">
+<span class="material-symbols-outlined text-[18px]">group</span>
+                AI &amp; Growth Engineering Team
+              </span>
+</div>
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-gradient-to-r from-primary-container to-secondary-container text-white font-label-lg text-label-lg font-semibold shadow-lg shadow-cyan-500/20 hover:scale-[1.02] active:scale-[0.98] transition-transform" href="#featured-read">
+<span>Read Full Article</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<span class="font-label-mono text-label-mono text-slate-400 uppercase tracking-widest text-[11px]">Case Study Verified</span>
+</div>
+</div>
+<!-- High-Fidelity Telemetry Card Visual (5 cols) -->
+<div class="lg:col-span-5 w-full">
+<div class="rounded-2xl bg-surface-container/95 p-6 shadow-xl relative overflow-hidden">
+<!-- Top bar simulation -->
+<div class="flex items-center justify-between pb-4 mb-4 bg-surface-container-low/50 rounded-xl px-4 py-2.5">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-mono text-label-mono text-slate-200">Zyntara Voice Agent Engine 4.2</span>
+</div>
+<span class="font-label-mono text-label-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">382ms Latency</span>
+</div>
+<!-- Metrics Mini Grid -->
+<div class="grid grid-cols-2 gap-3 mb-5">
+<div class="rounded-xl bg-surface-container-high/60 p-3.5">
+<p class="text-slate-400 font-label-md text-label-md">Capture Velocity</p>
+<p class="font-headline-md text-headline-md text-white font-bold mt-1">+287%</p>
+<p class="text-emerald-400 font-label-mono text-label-mono mt-0.5">vs static forms</p>
+</div>
+<div class="rounded-xl bg-surface-container-high/60 p-3.5">
+<p class="text-slate-400 font-label-md text-label-md">CRM Sync Rate</p>
+<p class="font-headline-md text-headline-md text-cyan-300 font-bold mt-1">99.4%</p>
+<p class="text-slate-400 font-label-mono text-label-mono mt-0.5">Instant Webhooks</p>
+</div>
+</div>
+<!-- Simulation Chat / Voice Feed -->
+<div class="space-y-3">
+<div class="rounded-xl bg-surface-container-lowest/80 p-3 text-xs text-slate-300 space-y-1">
+<div class="flex justify-between items-center text-[10px] text-slate-500 font-label-mono">
+<span>CALL LOG: #ZN-9041</span>
+<span>23:14:02 UTC</span>
+</div>
+<p class="text-slate-200 font-medium font-body-sm text-body-sm">"Prospect requesting $45k ERP migration proposal."</p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/40 text-primary-fixed text-[10px] font-mono">BANT: 4/4 Verified</span>
+<span class="text-emerald-400 text-[11px] font-mono">Calendar Booked</span>
+</div>
+</div>
+<!-- SVG Audio Wave Telemetry -->
+<div class="rounded-xl bg-surface-container-lowest/60 p-3 flex flex-col gap-2">
+<div class="flex items-center justify-between text-[11px] font-label-mono text-slate-400">
+<span>SYNTHETIC VOICE STREAM</span>
+<span class="text-secondary font-mono">ACTIVE (SPEECH-TO-TEXT)</span>
+</div>
+<svg class="w-full h-8 text-secondary" fill="none" viewbox="0 0 320 32">
+<path d="M0 16 Q20 3 40 16 T80 16 T120 4 T160 28 T200 12 T240 24 T280 8 T320 16" fill="none" opacity="0.85" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 16 Q30 24 60 16 T120 10 T180 22 T240 14 T300 20 T320 16" fill="none" opacity="0.5" stroke="#d3bbff" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<!-- Bottom live status -->
+<div class="mt-4 pt-3 flex items-center justify-between text-xs text-slate-400">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">smart_toy</span>
+                  Lead qualified in 42 seconds
+                </span>
+<span class="text-secondary font-mono text-[11px]">AUTONOMOUS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Articles Grid -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-10" id="articles-catalogue">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+<div>
+<p class="font-label-mono text-label-mono uppercase tracking-[0.2em] text-secondary font-semibold mb-2">CURATED INTELLIGENCE</p>
+<h2 class="font-headline-lg text-headline-lg text-white font-bold tracking-tight">Latest Architectural Guides</h2>
+</div>
+<p class="font-body-md text-body-md text-slate-400 max-w-md">
+          Actionable blueprints written by engineers and marketing directors for measurable business acceleration.
+        </p>
+</div>
+<!-- 6 Distinct Article Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="articles-grid">
+<!-- Article 1: SEO -->
+<article class="article-card group flex flex-col justify-between rounded-2xl bg-surface-container/70 backdrop-blur-md p-6 sm:p-7 shadow-lg transition-all duration-300 hover:translate-y-[-4px] hover:bg-surface-container-high/90" data-cat="seo">
+<div>
+<div class="flex items-center justify-between mb-5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-label-mono text-label-mono font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                SEO
+              </span>
+<span class="font-label-mono text-label-mono text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+                5 min read
+              </span>
+</div>
+<div class="mb-4 overflow-hidden rounded-xl bg-surface-container-lowest h-40 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Technical enterprise search engine optimization analytics dashboard with semantic schema mapping graphs and organic ranking trajectory metrics on dark blue visual canvas" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZVWoKm2Rpx7INtARQGOiWdleIhFad3Fh5BB7Dvyr_1l_yIy-6kpOsBYjOyVk9TP3P59Pu1idqb6j7q6XWIzd7INSDr0YjU29slG9yi5vyG3IPGpr5J6nPSlcRGXkCjf7CxILIMXV1N_2qqvvBFroDhV31RbkM2km7v4ose8SylGH-Qi9QiSsIzoFrn1uH-44JlriMPyZ8nz5eTja0vxURncQrB5bdNVu4ekI_LP8z"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-snug mb-3 group-hover:text-cyan-200 transition-colors">
+              A Simple SEO Checklist for Small Business Websites in 2026
+            </h3>
+<p class="font-body-sm text-body-sm text-slate-300 leading-relaxed mb-6">
+              Cut through obsolete keyword stuffing tactics. Here is the operational checklist covering core schema entities, clean internal link architecture, and Core Web Vitals.
+            </p>
+</div>
+<div class="pt-5 flex items-center justify-between bg-surface-container-low/50 rounded-xl px-4 py-3">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center font-bold text-xs font-mono">MS</div>
+<span class="font-label-md text-label-md text-slate-300">Marcus Shaw • Technical SEO</span>
+</div>
+<a class="text-secondary hover:text-white transition-colors flex items-center" href="#article-seo">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 2: Meta Ads -->
+<article class="article-card group flex flex-col justify-between rounded-2xl bg-surface-container/70 backdrop-blur-md p-6 sm:p-7 shadow-lg transition-all duration-300 hover:translate-y-[-4px] hover:bg-surface-container-high/90" data-cat="meta-ads digital-marketing">
+<div>
+<div class="flex items-center justify-between mb-5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/20 text-primary font-label-mono text-label-mono font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                META ADS
+              </span>
+<span class="font-label-mono text-label-mono text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+                7 min read
+              </span>
+</div>
+<div class="mb-4 overflow-hidden rounded-xl bg-surface-container-lowest h-40 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High converting mobile performance advertising creatives and Meta Advantage Plus campaign funnel analytics dashboard visualized with illuminated purple graphs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVnQKKzMSs_R8hj8SDtDIMwBZdvJnHCkm5l3RwzSl5_xlZZeW1u7RjdNVS00OGp2pgaN1tL4G6DMiTPxxm58zggPMPQezgEPTdqhAuLBwfLPtEjyUYNvAN-BfMq9zY_IrdTqaCCGxDYP3kyu5xbiPYNjMRlawJRedUhhRrMm3fbLlmSzKNOuqdfdRR_Rgd1qx1JMiiUATZMoAAyo-uuinunluhcxGhGCUC6iepFvGN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-snug mb-3 group-hover:text-cyan-200 transition-colors">
+              How to Improve Lead Quality &amp; Prevent Ad Fatigue with Advantage+ Meta Ads
+            </h3>
+<p class="font-body-sm text-body-sm text-slate-300 leading-relaxed mb-6">
+              Learn how to feed clean Conversion API (CAPI) value signals back into Meta’s algorithm to stop bot leads and eliminate audience fatigue during aggressive scaling.
+            </p>
+</div>
+<div class="pt-5 flex items-center justify-between bg-surface-container-low/50 rounded-xl px-4 py-3">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-primary-container text-white flex items-center justify-center font-bold text-xs font-mono">DL</div>
+<span class="font-label-md text-label-md text-slate-300">David Lin • Paid Lead</span>
+</div>
+<a class="text-secondary hover:text-white transition-colors flex items-center" href="#article-meta">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 3: Website Development -->
+<article class="article-card group flex flex-col justify-between rounded-2xl bg-surface-container/70 backdrop-blur-md p-6 sm:p-7 shadow-lg transition-all duration-300 hover:translate-y-[-4px] hover:bg-surface-container-high/90" data-cat="website-development">
+<div>
+<div class="flex items-center justify-between mb-5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-mono text-label-mono font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                WEBSITE DEV
+              </span>
+<span class="font-label-mono text-label-mono text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+                6 min read
+              </span>
+</div>
+<div class="mb-4 overflow-hidden rounded-xl bg-surface-container-lowest h-40 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern ultra responsive enterprise web design wireframe on dual monitors showing sub-second speed load telemetry and frictionless user journey pipelines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-mVdF5kGqGzQ7hzw1DpCKVQnFDaqvlBir6pXsfYskcs9slBqAFnT1zdLh-dFkvuGaUnf2nOnmLvhZy-B0nEA1TcbsNzDzTfxhnCXfr5PXD42Jr4WbDEqx_KoHdGL3b3_mnudpJJ2szY75qf6wECPc8TT7UmUXJNdl6GCuWwdng4jdEFepnqI73cgfuzbkN9Sk2QifSGk_bWR0nI5fMrPD1mqOoAynXdVRYFoA13-q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-snug mb-3 group-hover:text-cyan-200 transition-colors">
+              Why Your B2B Website Should Be Designed for Conversion Velocity, Not Just Aesthetics
+            </h3>
+<p class="font-body-sm text-body-sm text-slate-300 leading-relaxed mb-6">
+              A visually stunning website that loads in 4.5 seconds and buries booking triggers converts at 0.8%. We dissect the anatomy of sub-second high-velocity B2B portals.
+            </p>
+</div>
+<div class="pt-5 flex items-center justify-between bg-surface-container-low/50 rounded-xl px-4 py-3">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-cyan-900 text-cyan-200 flex items-center justify-center font-bold text-xs font-mono">EV</div>
+<span class="font-label-md text-label-md text-slate-300">Elena Vance • Frontend Architect</span>
+</div>
+<a class="text-secondary hover:text-white transition-colors flex items-center" href="#article-webdev">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 4: GEO -->
+<article class="article-card group flex flex-col justify-between rounded-2xl bg-surface-container/70 backdrop-blur-md p-6 sm:p-7 shadow-lg transition-all duration-300 hover:translate-y-[-4px] hover:bg-surface-container-high/90" data-cat="geo seo">
+<div>
+<div class="flex items-center justify-between mb-5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-label-mono text-label-mono font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                GEO
+              </span>
+<span class="font-label-mono text-label-mono text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+                8 min read
+              </span>
+</div>
+<div class="mb-4 overflow-hidden rounded-xl bg-surface-container-lowest h-40 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Neural language model citation graph showing interconnected knowledge nodes, search citations and conversational AI engine synthesis in vivid cyan and amber tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCllEp_8XcbnE19UBpeYMb5Ju0SQbg0wHq8L7U6Bo8cDwScBMZ7K_PhAMQeXV7sa-zxQTzhs3omSnA3GobqOo3AAm73Wo7QNVcOG2zIarItnaiE2FNf4Rjltmol4JBDmVe4gOmdGtlMDcZbt_3feRQkh6T-PupRhsc7dgZarmL-5IoCdIB1PLvZq9cX9HzVafIBs_r0Uzzkh9QuoHzY9QbmNg751raz0jgFzw9vt1_r"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-snug mb-3 group-hover:text-cyan-200 transition-colors">
+              GEO Explained: How Generative Engine Optimization Gets Brands Cited in Perplexity &amp; ChatGPT
+            </h3>
+<p class="font-body-sm text-body-sm text-slate-300 leading-relaxed mb-6">
+              When 40% of search journeys end inside an LLM answer, citation indexing is the new PageRank. Step-by-step guidance on structural fact density and knowledge graphs.
+            </p>
+</div>
+<div class="pt-5 flex items-center justify-between bg-surface-container-low/50 rounded-xl px-4 py-3">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-amber-900/60 text-amber-200 flex items-center justify-center font-bold text-xs font-mono">TK</div>
+<span class="font-label-md text-label-md text-slate-300">Tariq Khan • Head of AI Search</span>
+</div>
+<a class="text-secondary hover:text-white transition-colors flex items-center" href="#article-geo">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 5: AEO -->
+<article class="article-card group flex flex-col justify-between rounded-2xl bg-surface-container/70 backdrop-blur-md p-6 sm:p-7 shadow-lg transition-all duration-300 hover:translate-y-[-4px] hover:bg-surface-container-high/90" data-cat="aeo seo">
+<div>
+<div class="flex items-center justify-between mb-5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container/20 text-primary font-label-mono text-label-mono font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                AEO
+              </span>
+<span class="font-label-mono text-label-mono text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+                6 min read
+              </span>
+</div>
+<div class="mb-4 overflow-hidden rounded-xl bg-surface-container-lowest h-40 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Google AI overview search interface demonstrating position zero snippet capture with clear structured answer formats and interactive semantic cards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAFxo4C6aB9_WGUNLMs_AVnBB8uCRyIYTRorK6n8_fA0WfinqbvOm4o_m9nHhTR3BYheeGhx3istEh094Q6cMQLkbzz7e5MrKd5B1xcwgNwcPoh8J4aUR3f248LxsElmVyDI8t7RxjJ8XxDYRfSb-CxEMCwQaoAf8b7Da3vzCnHQKD0dwfL72d5TyKROYgcxAO-oXa2Vvz0kpVbfi5k4ZsLBv4BqULTkJu9a5h2LS9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-snug mb-3 group-hover:text-cyan-200 transition-colors">
+              Answer Engine Optimization: Capturing Position #0 and Google AI Overviews
+            </h3>
+<p class="font-body-sm text-body-sm text-slate-300 leading-relaxed mb-6">
+              Learn how to reformat product documentation, comparison guides, and pricing tables into direct, extractable units that algorithmic answer crawlers ingest first.
+            </p>
+</div>
+<div class="pt-5 flex items-center justify-between bg-surface-container-low/50 rounded-xl px-4 py-3">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-purple-900/60 text-purple-200 flex items-center justify-center font-bold text-xs font-mono">SR</div>
+<span class="font-label-md text-label-md text-slate-300">Sofia Ramos • Content Systems</span>
+</div>
+<a class="text-secondary hover:text-white transition-colors flex items-center" href="#article-aeo">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Article 6: AI Automation -->
+<article class="article-card group flex flex-col justify-between rounded-2xl bg-surface-container/70 backdrop-blur-md p-6 sm:p-7 shadow-lg transition-all duration-300 hover:translate-y-[-4px] hover:bg-surface-container-high/90" data-cat="ai-automation">
+<div>
+<div class="flex items-center justify-between mb-5">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-mono text-label-mono font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                AI AUTOMATION
+              </span>
+<span class="font-label-mono text-label-mono text-slate-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+                7 min read
+              </span>
+</div>
+<div class="mb-4 overflow-hidden rounded-xl bg-surface-container-lowest h-40 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Autonomous AI conversational agent system diagram connecting voice websocket streams to enterprise CRM database with low latency routing nodes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwxZauZmQsjs7XA0EoHVCdT1EpxlZPdVVhCTKuWC8si2zXqzEJ0Qu5IyAyJyEeHiTVHjdI8CIymFMwiy8NDsUbf-b90ar66ycDdP_EfkU8UTTlJPxDLgdpe_YXRKVrLrgDQ7rq9wVIe4dp7OUoz6Lhpd-hHLXhStm4K6uXjxnHiSt_gzKBi-gnidv2PnQw_Q6P4sicQXW1nv33AjJvrq8kwHN6e1LCNcyhvCXfBPHH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-white font-bold leading-snug mb-3 group-hover:text-cyan-200 transition-colors">
+              Autonomous Voice Agents: The Practical Implementation Guide for Service Businesses
+            </h3>
+<p class="font-body-sm text-body-sm text-slate-300 leading-relaxed mb-6">
+              From Twilio SIP trunking to sub-500ms Whisper + Cartesia pipelines. A breakdown of how dental, legal, and roofing companies handle 100% of missed calls autonomously.
+            </p>
+</div>
+<div class="pt-5 flex items-center justify-between bg-surface-container-low/50 rounded-xl px-4 py-3">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-cyan-900 text-cyan-200 flex items-center justify-center font-bold text-xs font-mono">AJ</div>
+<span class="font-label-md text-label-md text-slate-300">Alex Jensen • Systems Engineer</span>
+</div>
+<a class="text-secondary hover:text-white transition-colors flex items-center" href="#article-voice">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<!-- Practical Newsletter Lead Magnet Section -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
+<div class="relative rounded-3xl bg-gradient-to-br from-surface-container-high/90 via-surface-container to-surface-container-low p-8 sm:p-12 lg:p-16 shadow-2xl overflow-hidden">
+<!-- Visual Backdrop element -->
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-primary-container/25 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute right-1/4 bottom-0 w-80 h-80 bg-secondary-container/15 rounded-full blur-[80px] pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest text-secondary font-label-mono text-label-mono mb-4">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+              FORTNIGHTLY GROWTH ARCHITECTURE
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-white font-bold tracking-tight mb-3">
+              Get Practical Growth Insights Delivered Fortnightly
+            </h2>
+<p class="font-body-md text-body-md text-slate-300 leading-relaxed max-w-lg mb-4">
+              Zero generic AI hype or recycled platitudes. Every two weeks we deliver technical teardowns of winning ad accounts, LLM visibility tests, and conversion wireframes.
+            </p>
+<div class="flex items-center gap-2 text-slate-400 font-label-md text-label-md">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">verified_user</span>
+<span>Zero spam. Actionable teardowns only. Unsubscribe with 1 click.</span>
+</div>
+</div>
+<div class="lg:col-span-6">
+<form class="space-y-3.5 bg-surface-container-lowest/80 backdrop-blur-xl p-6 sm:p-8 rounded-2xl shadow-xl" id="newsletter-form">
+<div>
+<label class="block font-label-md text-label-md text-slate-300 mb-1.5" for="subscriber-name">First Name</label>
+<input class="w-full h-[50px] rounded-xl bg-surface-container-high/80 px-4 text-white placeholder:text-slate-500 font-body-md text-body-md border-0 focus:ring-2 focus:ring-secondary focus:outline-none transition-all" id="subscriber-name" placeholder="e.g. Rachel" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-slate-300 mb-1.5" for="subscriber-email">Work Email Address</label>
+<input class="w-full h-[50px] rounded-xl bg-surface-container-high/80 px-4 text-white placeholder:text-slate-500 font-body-md text-body-md border-0 focus:ring-2 focus:ring-secondary focus:outline-none transition-all" id="subscriber-email" placeholder="rachel@company.com" required="" type="email"/>
+</div>
+<button class="w-full h-[50px] mt-2 rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-white font-label-lg text-label-lg font-semibold shadow-lg shadow-cyan-500/25 hover:brightness-110 active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="submit">
+<span>Subscribe to Insights</span>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</button>
+<div class="hidden text-center text-xs font-mono text-emerald-400 pt-2" id="newsletter-success">
+                ✓ Check your inbox — our latest benchmark breakdown has been dispatched.
+              </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Final High-Impact CTA -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-6 pb-20">
+<div class="relative rounded-3xl bg-surface-container-low p-8 sm:p-14 text-center overflow-hidden shadow-2xl">
+<!-- Photonic underglow -->
+<div class="absolute inset-x-1/4 top-0 h-40 bg-gradient-to-b from-secondary-container/20 via-primary-container/10 to-transparent blur-[60px] pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+<div class="w-12 h-12 rounded-2xl bg-primary-container/30 text-secondary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[28px]">rocket_launch</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white font-bold tracking-tight mb-4 leading-tight">
+            Want Help Applying These Strategies to Your Business?
+          </h2>
+<p class="font-body-lg text-body-lg text-slate-300 leading-relaxed max-w-xl mx-auto mb-9">
+            Schedule a free 30-minute growth consultation with our engineers and marketing strategists. We will audit your current pipeline and map the highest-ROI automations.
+          </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-primary-container to-secondary-container text-white font-label-lg text-label-lg font-semibold shadow-xl shadow-cyan-500/20 hover:scale-[1.03] active:scale-[0.98] transition-transform" href="contact.html#audit-section">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span>Book Free Strategy Call</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-surface-container-highest/80 hover:bg-surface-container-highest text-slate-100 font-label-lg text-label-lg font-semibold transition-colors" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-emerald-400">chat</span>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<p class="font-label-mono text-label-mono text-slate-500 mt-6 text-xs uppercase tracking-wider">
+            100% Free • No Obligation • Custom Audit PDF Provided
+          </p>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Interactive Live Search & Category Filtering
+  (function initBlogInsights() {
+    const searchInput = document.getElementById('article-search');
+    const filterButtons = document.querySelectorAll('.cat-pill');
+    const articleCards = document.querySelectorAll('.article-card');
+    let activeCategory = 'all';
+
+    function filterArticles() {
+      const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+
+      articleCards.forEach(card => {
+        const textContent = card.innerText.toLowerCase();
+        const cardCategories = (card.getAttribute('data-cat') || '').toLowerCase();
+
+        const matchesQuery = query === '' || textContent.includes(query);
+        const matchesCategory = activeCategory === 'all' || cardCategories.includes(activeCategory);
+
+        if (matchesQuery && matchesCategory) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('flex');
+        }
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', filterArticles);
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active-pill', 'bg-primary-container', 'text-white', 'shadow-lg', 'shadow-primary-container/30');
+          b.classList.add('bg-surface-container-high/60', 'text-slate-300');
+        });
+
+        btn.classList.add('active-pill', 'bg-primary-container', 'text-white', 'shadow-lg', 'shadow-primary-container/30');
+        btn.classList.remove('bg-surface-container-high/60', 'text-slate-300');
+
+        activeCategory = btn.getAttribute('data-cat') || 'all';
+        filterArticles();
+      });
+    });
+
+    // Keyboard shortcut CMD+K
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        if (searchInput) {
+          searchInput.focus();
+          window.scrollTo({ top: searchInput.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+        }
+      }
+    });
+
+    // Newsletter Form Interactivity
+    const form = document.getElementById('newsletter-form');
+    const successMsg = document.getElementById('newsletter-success');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) {
+          submitBtn.innerText = 'Subscribing...';
+          submitBtn.disabled = true;
+        }
+        setTimeout(() => {
+          if (submitBtn) submitBtn.classList.add('hidden');
+          if (successMsg) successMsg.classList.remove('hidden');
+        }, 800);
+      });
+    }
+  })();
+</script>
+    </div>
+  </main>
+
+  <div class="md:hidden fixed bottom-4 left-4 right-4 z-40 bg-surface-container-high/95 backdrop-blur-xl p-2 rounded-full border border-outline-variant/40 shadow-[0_4px_24px_rgba(0,0,0,0.6)] flex items-center gap-2">
+  <a class="flex-1 text-center font-label-md text-label-md py-2.5 px-3 rounded-full bg-surface-container text-on-surface flex items-center justify-center gap-1.5 border border-outline-variant/30 hover:bg-surface-container-highest transition-colors" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+    <span class="material-symbols-outlined text-[16px] text-secondary">chat</span>
+    <span>WhatsApp</span>
+  </a>
+  <a class="flex-1 text-center font-label-md text-label-md py-2.5 px-3 rounded-full bg-gradient-to-r from-primary-container via-purple-600 to-secondary text-surface-container-lowest font-bold flex items-center justify-center gap-1.5 shadow-[0_0_16px_rgba(93,230,255,0.35)] hover:opacity-95 transition-all" href="contact.html#book-call">
+    <span class="material-symbols-outlined text-[16px]">bolt</span>
+    <span>Strategy Call</span>
+  </a>
+</div>
+  <footer class="w-full bg-surface-container-lowest py-16 border-t border-outline-variant/20 shadow-[0_-1px_12px_rgba(0,0,0,0.4)]">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <!-- Col 1: Brand Info -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <img alt="Zyntara Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCq9AlNczhf-jQxlMKyyd0OYbMoZBh_Df4x_UkceZ5NzeRu4Mc9Sni9_-9mOA-lT76uaFOXSkvKlVCnmq4sITcWZ22fOdyEMSj_liQSbLVQPHrsNzjN5csM08rgThw1jljuaFQpZp9HHlFjB4DREMTGKAM239ZJUMJr1yhXI6Vp4393YzT6yNg2JHm6lTyh2pAaMhVrLmn809jmxhs-uSCZLGI93kBnG2z-S_kAu3m1GQ">
+          <span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Zyntara</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Enterprise AI automation, generative engine visibility (GEO/AEO), and autonomous digital growth infrastructure engineered for mission-critical business scale.
+        </p>
+        <div class="flex items-center gap-3 pt-2">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-xs text-secondary font-mono border border-secondary/20">
+            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Systems Active 24/7
+          </span>
+        </div>
+      </div>
+
+      <!-- Col 2: Solutions -->
+      <div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4 font-semibold">Growth Solutions</h4>
+        <ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-secondary transition-colors" href="ai-solutions.html">Autonomous AI Agents & Chatbots</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="web-development.html">High-Converting Web Development</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="app-development.html">Cloud Software & Mobile Apps</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="digital-marketing.html">Multi-Channel Digital Marketing</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="seo-services.html">Organic SEO Search Visibility</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="geo-services.html">Generative Engine Optimization (GEO)</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="aeo-services.html">Answer Engine Optimization (AEO)</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="meta-ads.html">Meta Ads (Facebook & Instagram)</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="google-ads.html">Google Ads (Search & PMax)</a></li>
+          <li><a class="hover:text-secondary transition-colors font-semibold text-secondary" href="services.html">✦ All Services Directory</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Agency & Company -->
+      <div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4 font-semibold">Agency</h4>
+        <ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant">
+          <li><a class="hover:text-secondary transition-colors" href="about.html">About Zyntara</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="services.html">Growth Methodology</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="blog.html">Case Studies & Insights</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="contact.html">Contact Us</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="contact.html#audit-section">Free Growth Audit</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="privacy.html">Privacy Framework</a></li>
+          <li><a class="hover:text-secondary transition-colors" href="terms.html">Terms of Scale</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Direct Access CTA -->
+      <div>
+        <h4 class="font-headline-sm text-headline-sm text-on-surface mb-4 font-semibold">Direct Access</h4>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+          Ready to deploy quantum-leap growth systems and automate your inbound pipelines?
+        </p>
+        <div class="space-y-3">
+          <a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary hover:text-on-surface transition-colors font-semibold bg-surface-container px-4 py-2.5 rounded-xl border border-secondary/20 hover:border-secondary/50 w-full justify-center" href="contact.html#book-call">
+            <span class="material-symbols-outlined text-[18px]">calendar_today</span>
+            Schedule Protocol Call
+          </a>
+          <a class="inline-flex items-center gap-2 font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors text-xs w-full justify-center" href="https://wa.me/?text=Hello%20Zyntara%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20growth%20and%20AI%20services." target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[16px]">chat</span>
+            Direct WhatsApp Hotline
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pt-8 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+      <p>© 2026 Zyntara AI Systems. Engineered for autonomous business growth.</p>
+      <div class="flex items-center gap-6">
+        <a class="hover:text-secondary transition-colors text-xs" href="privacy.html">Privacy Framework</a>
+        <a class="hover:text-secondary transition-colors text-xs" href="terms.html">Terms of Scale</a>
+        <a class="hover:text-secondary transition-colors text-xs" href="contact.html">Security Protocol</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+  // Interactive Live Search & Category Filtering
+  (function initBlogInsights() {
+    const searchInput = document.getElementById('article-search');
+    const filterButtons = document.querySelectorAll('.cat-pill');
+    const articleCards = document.querySelectorAll('.article-card');
+    let activeCategory = 'all';
+
+    function filterArticles() {
+      const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+
+      articleCards.forEach(card => {
+        const textContent = card.innerText.toLowerCase();
+        const cardCategories = (card.getAttribute('data-cat') || '').toLowerCase();
+
+        const matchesQuery = query === '' || textContent.includes(query);
+        const matchesCategory = activeCategory === 'all' || cardCategories.includes(activeCategory);
+
+        if (matchesQuery && matchesCategory) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('flex');
+        }
+      });
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', filterArticles);
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active-pill', 'bg-primary-container', 'text-white', 'shadow-lg', 'shadow-primary-container/30');
+          b.classList.add('bg-surface-container-high/60', 'text-slate-300');
+        });
+
+        btn.classList.add('active-pill', 'bg-primary-container', 'text-white', 'shadow-lg', 'shadow-primary-container/30');
+        btn.classList.remove('bg-surface-container-high/60', 'text-slate-300');
+
+        activeCategory = btn.getAttribute('data-cat') || 'all';
+        filterArticles();
+      });
+    });
+
+    // Keyboard shortcut CMD+K
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        if (searchInput) {
+          searchInput.focus();
+          window.scrollTo({ top: searchInput.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+        }
+      }
+    });
+
+    // Newsletter Form Interactivity
+    const form = document.getElementById('newsletter-form');
+    const successMsg = document.getElementById('newsletter-success');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) {
+          submitBtn.innerText = 'Subscribing...';
+          submitBtn.disabled = true;
+        }
+        setTimeout(() => {
+          if (submitBtn) submitBtn.classList.add('hidden');
+          if (successMsg) successMsg.classList.remove('hidden');
+        }, 800);
+      });
+    }
+  })();
+</script>
+  <!-- Core Interactive Scripts -->
+<script>
+// Mobile Navigation Drawer Toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const drawer = document.getElementById('mobile-nav-drawer');
+  const menuIcon = document.getElementById('mobile-menu-icon');
+  
+  if (toggleBtn && drawer) {
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isHidden = drawer.classList.toggle('hidden');
+      if (menuIcon) {
+        menuIcon.textContent = isHidden ? 'menu' : 'close';
+      }
+    });
+
+    // Close when clicking any link inside drawer
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        drawer.classList.add('hidden');
+        if (menuIcon) menuIcon.textContent = 'menu';
+      });
+    });
+  }
+
+  // Mobile Services Submenu Toggle
+  const servicesToggle = document.getElementById('mobile-services-toggle');
+  const servicesList = document.getElementById('mobile-services-list');
+  const servicesArrow = document.getElementById('mobile-services-arrow');
+  if (servicesToggle && servicesList) {
+    servicesToggle.addEventListener('click', () => {
+      servicesList.classList.toggle('hidden');
+      if (servicesArrow) {
+        servicesArrow.classList.toggle('rotate-180');
+      }
+    });
+  }
+
+  // FAQ Accordion Handlers
+  document.querySelectorAll('.faq-toggle, [data-faq-toggle]').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const item = button.closest('.faq-item') || button.parentElement;
+      const content = item.querySelector('.faq-content') || item.querySelector('[data-faq-content]') || item.nextElementSibling;
+      const icon = item.querySelector('.faq-icon') || item.querySelector('.material-symbols-outlined');
+      if (!content) return;
+      
+      const isCurrentlyHidden = content.classList.contains('hidden');
+
+      // Close all siblings
+      const parentContainer = item.closest('.faq-container') || item.parentElement;
+      if (parentContainer) {
+        parentContainer.querySelectorAll('.faq-content, [data-faq-content]').forEach(c => c.classList.add('hidden'));
+        parentContainer.querySelectorAll('.faq-icon').forEach(ic => ic.classList.remove('rotate-180'));
+      }
+
+      // Open selected
+      if (isCurrentlyHidden) {
+        content.classList.remove('hidden');
+        if (icon) icon.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Interactive Form Submissions (Audit and Contact Forms)
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
+      const originalText = submitBtn ? submitBtn.innerHTML : 'Submit';
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `
+          <span class="inline-flex items-center gap-2">
+            <svg class="animate-spin h-4 w-4 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+            </svg>
+            Transmitting Protocol...
+          </span>
+        `;
+      }
+
+      setTimeout(() => {
+        // Success Notification Banner
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-24 right-6 z-50 bg-surface-container-high border border-secondary text-on-surface p-4 rounded-2xl shadow-[0_8px_32px_rgba(93,230,255,0.4)] flex items-center gap-3 transition-all duration-300 transform translate-y-0';
+        toast.innerHTML = `
+          <div class="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center text-secondary shrink-0">
+            <span class="material-symbols-outlined text-[20px]">check_circle</span>
+          </div>
+          <div>
+            <div class="font-headline-sm text-sm font-bold text-on-surface">Growth Inquiry Confirmed</div>
+            <div class="font-body-sm text-xs text-on-surface-variant">A Senior AI Strategist will analyze your metrics and contact you within 24 hours.</div>
+          </div>
+        `;
+        document.body.appendChild(toast);
+
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+        }
+        form.reset();
+
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateY(-10px)';
+          setTimeout(() => toast.remove(), 400);
+        }, 5000);
+      }, 900);
+    });
+  });
+});
+</script>
+</body>
+</html>
